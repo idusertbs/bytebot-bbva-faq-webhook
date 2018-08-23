@@ -64,7 +64,7 @@ def makeResponse(req):
         tiposdeproducto = parameters.get("tiposdeproducto")
 
         if tiposdeproducto == "Cuenta.Sueldo":
-            speech = "Puedes realizar \n *depósitos ilimitados, 2 operaciones sin costo* (retiros de dinero y transferencias entre cuentas) en la misma localidad donde se contrató tu cuenta."
+            speech = "Puedes realizar *depósitos ilimitados, 2 operaciones sin costo* (retiros de dinero y transferencias entre cuentas) en la misma localidad donde se contrató tu cuenta."
             return {
                 "speech": speech,
                 "displayText": speech
@@ -88,13 +88,13 @@ def makeResponse(req):
         tiposdeproducto = parameters.get("tiposdeproducto")
 
         if tiposdeproducto == "Cuenta.Sueldo":
-            speech = "¡Ya diste el primer paso :D!, ahora solo debes acercarte a nuestras oficinas para obtener la *Tarjeta de Débito* que te permitirá acceder a todos nuestros canales de atención: _Banca por Internet_, _Banca Móvil_, _Banca por Teléfono_, entre otros. Con tu Tarjeta de Débito podrás realizar operaciones, como *pagar tus servicios*, *realizar transferencias* y mucho más."
+            speech = "En cajeros del BBVA Continental puedes retirar ilimitadamente sin costo a nivel nacional.\nAdemás, puedes retirar en todos los cajeros de la red VISA en la misma ciudad donde se abrió la cuenta según el ingreso neto mensual:\n\n- 1 retiro: Hasta S/1,799.\n- 2 retiros: Desde S/1,800 hasta S/3,499.\n- 4 retiros: Desde S/3,500 hasta S/6,999.\n- 10 retiros: Desde S/7,000 a más.\n\nPara disfrutar del beneficio la Cuenta Sueldo debe estar asociada a una tarjeta de crédito o débito del BBVA Continental y aplica después de recibir un mes de abono de sueldo."
             return {
                 "speech": speech,
                 "displayText": speech
             }
         else:
-            speech = "¡Ya diste el primer paso ;)!, ahora solo debes acercarte a nuestras oficinas para obtener la *Tarjeta de Débito* que te permitirá acceder a todos nuestros canales de atención: _Banca por Internet_, _Banca Móvil_, _Banca por Teléfono_, entre otros. Con tu Tarjeta de Débito podrás realizar operaciones, como *pagar tus servicios*, *realizar transferencias* y mucho más."
+            speech = "*Ilimitados*: retiro de dinero a través de todos los cajeros BBVA a nivel nacional y transferencias entre cuentas (realizados en la misma localidad donde se contrató la cuenta) y consultas de saldos y movimientos."
             return {
                 "speech": speech,
                 "displayText": speech,
