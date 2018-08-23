@@ -35,20 +35,8 @@ def makeResponse(req):
     metadata = result.get("metadata")
     intentName = metadata.get("intentName")
     
-    if intentName == "prediccion.clima":
-        parameters = result.get("parameters")
-        city = parameters.get("geo-city")
-        date = parameters.get("date")
-        if city is None:
-            return None
-        r=requests.get('http://api.openweathermap.org/data/2.5/forecast?q='+city+'&appid=a788b8747f3d4299c2592fdedb2b1e45')
-        json_object = r.json()
-        weather=json_object['list']
-        for i in range(0,30):
-            if date in weather[i]['dt_txt']:
-                condition= weather[i]['weather'][0]['description']
-                break
-        speech = "La predicción para "+city+ " el "+date+" es: "+condition
+    if intentName == "no.secuencial.parametrica.pg1":
+        speech = "Si esta funcionando"
         return {
         "speech": speech,
         "displayText": speech,
