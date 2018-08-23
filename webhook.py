@@ -35,7 +35,7 @@ def makeResponse(req):
     metadata = result.get("metadata")
     intentName = metadata.get("intentName")
     
-    if intentName == "no.secuencial.parametrica.pg1-options":
+    if intentName == "no.secuencial.no.parametrica.pg1-options":
         parameters = req.get("parameters")
         tiposdeproducto = req.get("tiposdeproducto")
 
