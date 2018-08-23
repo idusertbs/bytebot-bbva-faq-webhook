@@ -36,14 +36,22 @@ def makeResponse(req):
     intentName = metadata.get("intentName")
     
     if intentName == "no.secuencial.parametrica.pg1":
-        speech = "funciona"
-        return {
-        "speech": speech,
-        "displayText": speech
-        }
-        
-    
+        parameters = req.get("parameters")
+        tiposdeproducto = req.get("tiposdeproducto")
 
+        if tiposdeproducto == "Cuenta Sueldo":
+            speech = "¡Ya diste el primer paso :D!, ahora solo debes acercarte a nuestras oficinas para obtener la *Tarjeta de Débito* que te permitirá acceder a todos nuestros canales de atención: _Banca por Internet_, _Banca Móvil_, _Banca por Teléfono_, entre otros. Con tu Tarjeta de Débito podrás realizar operaciones, como *pagar tus servicios*, *realizar transferencias* y mucho más."
+            return {
+                "speech": speech,
+                "displayText": speech
+            }
+        else:
+            speech = "¡Ya diste el primer paso ;)!, ahora solo debes acercarte a nuestras oficinas para obtener la *Tarjeta de Débito* que te permitirá acceder a todos nuestros canales de atención: _Banca por Internet_, _Banca Móvil_, _Banca por Teléfono_, entre otros. Con tu Tarjeta de Débito podrás realizar operaciones, como *pagar tus servicios*, *realizar transferencias* y mucho más."
+            return {
+                "speech": speech,
+                "displayText": speech
+            }
+            
     if intentName == "promocion.webhook":             
         result = req.get("result")
         parameters = result.get("parameters")
