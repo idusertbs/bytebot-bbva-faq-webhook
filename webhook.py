@@ -49,7 +49,14 @@ def makeResponse(req):
             speech = "¡Ya diste el primer paso ;)!, ahora solo debes acercarte a nuestras oficinas para obtener la *Tarjeta de Débito* que te permitirá acceder a todos nuestros canales de atención: _Banca por Internet_, _Banca Móvil_, _Banca por Teléfono_, entre otros. Con tu Tarjeta de Débito podrás realizar operaciones, como *pagar tus servicios*, *realizar transferencias* y mucho más."
             return {
                 "speech": speech,
-                "displayText": speech
+                "displayText": speech,
+                "messages": [
+				{
+					"type": "simple_response",
+					"platform": "facebook",
+					"textToSpeech": speech
+				}
+			]
             }
             
     if intentName == "promocion.webhook":             
