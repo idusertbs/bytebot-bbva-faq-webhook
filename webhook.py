@@ -35,7 +35,7 @@ def makeResponse(req):
     metadata = result.get("metadata")
     intentName = metadata.get("intentName")
     
-    if intentName == "no.secuencial.no.parametrica.pg1-options":
+    if intentName == "no.secuencial.parametrica.pg1":
         parameters = req.get("parameters")
         tiposdeproducto = req.get("tiposdeproducto")
 
@@ -52,9 +52,9 @@ def makeResponse(req):
                 "displayText": speech,
                 "messages": [
 				{
-					"type": "simple_response",
-					"platform": "facebook",
-					"textToSpeech": speech
+					"type": 0,
+					"speech": speech,
+                    "platform": "facebook"
 				}
 			]
             }
