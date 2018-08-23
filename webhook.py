@@ -36,11 +36,10 @@ def makeResponse(req):
     intentName = metadata.get("intentName")
     
     if intentName == "no.secuencial.parametrica.pg1":
-        speech = "Si esta funcionando"
+        speech = "funciona"
         return {
         "speech": speech,
-        "displayText": speech,
-        "source": "apiai-weather-webhook"
+        "displayText": speech
         }
         
     
