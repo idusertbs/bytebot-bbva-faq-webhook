@@ -626,6 +626,117 @@ def makeResponse(req):
                 ]
                 
             }
+    
+    if intentName == "c.palabras.sueltas.fondo-next":
+        parameters = result.get("parameters")
+        tiposdeproducto = parameters.get("tiposdeproducto")
+
+        if tiposdeproducto == "Cuenta.Sueldo":
+            speech = ""
+            return {
+                "speech": "",
+                "messages": [
+                                {
+                                "type": 0,
+                                "platform": "facebook",
+                                "speech": "Tu búsqueda coincide con las siguientes preguntas:"
+                                },
+                                {
+                                "type": 4,
+                                "platform": "facebook",
+                                "payload": {
+                                    "facebook": {
+                                    "attachment": {
+                                        "type": "template",
+                                        "payload": {
+                                        "template_type": "list",
+                                        "top_element_style": "compact",
+                                        "elements": [
+                                            {
+                                            "title": "Disposición de fondos",
+                                            "subtitle": "¿Puedo disponer de los fondos en cualquier momento?",
+                                            "image_url": "https://www.bbva.com.co/fbin/mult/TarjetasDeCredito_DetalleProducto_300x257_BBVAClasica_tcm1304-523147.png",
+                                            "buttons": [
+                                                {
+                                                "title": "Ver Respuesta",
+                                                "type": "postback",
+                                                "payload": "cs_from_lista_sucesiva_info_fondos"
+                                                }
+                                            ]
+                                            },
+                                            {
+                                            "title": "¿Mi saldo está protegido?",
+                                            "subtitle": "¿Los saldos de mi Cuenta Sueldo están cubiertos por el Fondo de Seguros de Depósito?",
+                                            "image_url": "https://www.bbva.com.co/fbin/mult/TarjetasDeCredito_DetalleProducto_300x257_BBVAClasica_tcm1304-523147.png",
+                                            "buttons": [
+                                                {
+                                                "title": "Ver Respuesta",
+                                                "type": "postback",
+                                                "payload": "cs_from_lista_sucesiva_info_seguros"
+                                                }
+                                            ]
+                                            }
+                                        ]
+                                        }
+                                    }
+                                    }
+                                }
+                                }
+                            ]
+            }
+        else:
+            speech = "Sí, siempre."
+            return {
+                "speech": speech,
+                "messages": [
+                                {
+                                "type": 0,
+                                "platform": "facebook",
+                                "speech": "Tu búsqueda coincide con las siguientes preguntas:"
+                                },
+                                {
+                                "type": 4,
+                                "platform": "facebook",
+                                "payload": {
+                                    "facebook": {
+                                    "attachment": {
+                                        "type": "template",
+                                        "payload": {
+                                        "template_type": "list",
+                                        "top_element_style": "compact",
+                                        "elements": [
+                                            {
+                                            "title": "Disposición de Fondos",
+                                            "subtitle": "¿Puedo disponer de los fondos en cualquier momento?",
+                                            "image_url": "https://www.bbva.com.co/fbin/mult/TarjetasDeCredito_DetalleProducto_300x257_BBVAClasica_tcm1304-523147.png",
+                                            "buttons": [
+                                                {
+                                                "title": "Ver Respuesta",
+                                                "type": "postback",
+                                                "payload": "cg_from_lista_sucesiva_info_fondos"
+                                                }
+                                            ]
+                                            },
+                                            {
+                                            "title": "¿Mi saldo está protegido?",
+                                            "subtitle": "¿Los saldos de mi Cuenta Ganadora están cubiertos por el Fondo de Seguros de Depósito?",
+                                            "image_url": "https://www.bbva.com.co/fbin/mult/TarjetasDeCredito_DetalleProducto_300x257_BBVAClasica_tcm1304-523147.png",
+                                            "buttons": [
+                                                {
+                                                "title": "Ver Respuesta",
+                                                "type": "postback",
+                                                "payload": "cg_from_lista_sucesiva_info_seguros"
+                                                }
+                                            ]
+                                            }
+                                        ]
+                                        }
+                                    }
+                                    }
+                                }
+                                }
+                            ]
+            }
 
     
 
