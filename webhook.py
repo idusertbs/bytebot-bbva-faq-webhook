@@ -348,8 +348,7 @@ def makeResponse(req):
                                         "elements": [
                                             {
                                             "title": "Operaciones Libres en Cajeros Automáticos",
-                                            "subtitle": "¿Cuántas operaciones libres tengo en Cajeros Automáticos del BBVA Continental?",
-                                            "image_url": "https://www.bbva.com.co/fbin/mult/TarjetasDeCredito_DetalleProducto_300x257_BBVAClasica_tcm1304-523147.png",
+                                            "subtitle": "¿Cuántas operaciones libres tengo en Cajeros Automáticos del BBVA Continental?",                                            
                                             "buttons": [
                                                 {
                                                 "title": "Ver Respuesta",
@@ -360,8 +359,7 @@ def makeResponse(req):
                                             },
                                             {
                                             "title": "¿Cómo hago operaciones en la web?",
-                                            "subtitle": "¿Si abrí mi Cuenta por la web, ¿Cómo puedo realizar operaciones en ella?",
-                                            "image_url": "https://www.bbva.com.co/fbin/mult/TarjetasDeCredito_DetalleProducto_300x257_BBVAClasica_tcm1304-523147.png",
+                                            "subtitle": "¿Si abrí mi Cuenta por la web, ¿Cómo puedo realizar operaciones en ella?",                                            
                                             "buttons": [
                                                 {
                                                 "title": "Ver Respuesta",
@@ -372,8 +370,7 @@ def makeResponse(req):
                                             },
                                             {
                                             "title": "Cantidad de Operaciones Libres",
-                                            "subtitle": "¿Cuántas operaciones libres tengo por ventanilla?",
-                                            "image_url": "https://www.bbva.com.co/fbin/mult/TarjetasDeCredito_DetalleProducto_300x257_BBVAClasica_tcm1304-523147.png",
+                                            "subtitle": "¿Cuántas operaciones libres tengo por ventanilla?",                                            
                                             "buttons": [
                                                 {
                                                 "title": "Ver Respuesta",
@@ -413,8 +410,7 @@ def makeResponse(req):
                                         "elements": [
                                             {
                                             "title": "Operaciones Libres en Cajeros Automáticos",
-                                            "subtitle": "¿Cuántas operaciones libres tengo en Cajeros Automáticos del BBVA Continental?",
-                                            "image_url": "https://www.bbva.com.co/fbin/mult/TarjetasDeCredito_DetalleProducto_300x257_BBVAClasica_tcm1304-523147.png",
+                                            "subtitle": "¿Cuántas operaciones libres tengo en Cajeros Automáticos del BBVA Continental?",                                            
                                             "buttons": [
                                                 {
                                                 "title": "Ver Respuesta",
@@ -425,8 +421,7 @@ def makeResponse(req):
                                             },
                                             {
                                             "title": "¿Cómo hago operaciones en la web?",
-                                            "subtitle": "¿Si abrí mi Cuenta por la web, ¿Cómo puedo realizar operaciones en ella?",
-                                            "image_url": "https://www.bbva.com.co/fbin/mult/TarjetasDeCredito_DetalleProducto_300x257_BBVAClasica_tcm1304-523147.png",
+                                            "subtitle": "¿Si abrí mi Cuenta por la web, ¿Cómo puedo realizar operaciones en ella?",                                            
                                             "buttons": [
                                                 {
                                                 "title": "Ver Respuesta",
@@ -437,8 +432,7 @@ def makeResponse(req):
                                             },
                                             {
                                             "title": "Cantidad de Operaciones Libres",
-                                            "subtitle": "¿Cuántas operaciones libres tengo por ventanilla?",
-                                            "image_url": "https://www.bbva.com.co/fbin/mult/TarjetasDeCredito_DetalleProducto_300x257_BBVAClasica_tcm1304-523147.png",
+                                            "subtitle": "¿Cuántas operaciones libres tengo por ventanilla?",                                            
                                             "buttons": [
                                                 {
                                                 "title": "Ver Respuesta",
@@ -654,8 +648,7 @@ def makeResponse(req):
                                         "elements": [
                                             {
                                             "title": "Disposición de fondos",
-                                            "subtitle": "¿Puedo disponer de los fondos en cualquier momento?",
-                                            "image_url": "https://www.bbva.com.co/fbin/mult/TarjetasDeCredito_DetalleProducto_300x257_BBVAClasica_tcm1304-523147.png",
+                                            "subtitle": "¿Puedo disponer de los fondos en cualquier momento?",                                            
                                             "buttons": [
                                                 {
                                                 "title": "Ver Respuesta",
@@ -666,8 +659,7 @@ def makeResponse(req):
                                             },
                                             {
                                             "title": "¿Mi saldo está protegido?",
-                                            "subtitle": "¿Mi saldo está cubierto por el Fondo de Seguros de Depósito?",
-                                            "image_url": "https://www.bbva.com.co/fbin/mult/TarjetasDeCredito_DetalleProducto_300x257_BBVAClasica_tcm1304-523147.png",
+                                            "subtitle": "¿Mi saldo está cubierto por el Fondo de Seguros de Depósito?",                                            
                                             "buttons": [
                                                 {
                                                 "title": "Ver Respuesta",
@@ -707,8 +699,7 @@ def makeResponse(req):
                                         "elements": [
                                             {
                                             "title": "Disposición de Fondos",
-                                            "subtitle": "¿Puedo disponer de los fondos en cualquier momento?",
-                                            "image_url": "https://www.bbva.com.co/fbin/mult/TarjetasDeCredito_DetalleProducto_300x257_BBVAClasica_tcm1304-523147.png",
+                                            "subtitle": "¿Puedo disponer de los fondos en cualquier momento?",                                            
                                             "buttons": [
                                                 {
                                                 "title": "Ver Respuesta",
@@ -719,8 +710,7 @@ def makeResponse(req):
                                             },
                                             {
                                             "title": "¿Mi saldo está protegido?",
-                                            "subtitle": "¿Mi saldo está cubierto por el Fondo de Seguros de Depósito?",
-                                            "image_url": "https://www.bbva.com.co/fbin/mult/TarjetasDeCredito_DetalleProducto_300x257_BBVAClasica_tcm1304-523147.png",
+                                            "subtitle": "¿Mi saldo está cubierto por el Fondo de Seguros de Depósito?",                                            
                                             "buttons": [
                                                 {
                                                 "title": "Ver Respuesta",
@@ -765,8 +755,7 @@ def makeResponse(req):
                                         "elements": [
                                             {
                                             "title": "¿Uso de mi tarjeta de débito en terminales POS?",
-                                            "subtitle": "¿Puedo usar mi tarjeta de débito en establecimientos comerciales que tengan terminales POS?",
-                                            "image_url": "https://www.bbva.com.co/fbin/mult/TarjetasDeCredito_DetalleProducto_300x257_BBVAClasica_tcm1304-523147.png",
+                                            "subtitle": "¿Puedo usar mi tarjeta de débito en establecimientos comerciales que tengan terminales POS?",                                            
                                             "buttons": [
                                                 {
                                                 "title": "Ver Respuesta",
@@ -777,8 +766,7 @@ def makeResponse(req):
                                             },
                                             {
                                             "title": "¿Costo del mantenimiento al mes?",
-                                            "subtitle": "¿Cuánto pago al mes por mantenimiento de mi Cuenta y mi Tarjeta de Débito?",
-                                            "image_url": "https://www.bbva.com.co/fbin/mult/TarjetasDeCredito_DetalleProducto_300x257_BBVAClasica_tcm1304-523147.png",
+                                            "subtitle": "¿Cuánto pago al mes por mantenimiento de mi Cuenta y mi Tarjeta de Débito?",                                            
                                             "buttons": [
                                                 {
                                                 "title": "Ver Respuesta",
@@ -818,8 +806,7 @@ def makeResponse(req):
                                         "elements": [
                                             {
                                             "title": "¿Uso de mi tarjeta de débito en terminales POS?",
-                                            "subtitle": "¿Puedo usar mi tarjeta de débito en establecimientos comerciales que tengan terminales POS?",
-                                            "image_url": "https://www.bbva.com.co/fbin/mult/TarjetasDeCredito_DetalleProducto_300x257_BBVAClasica_tcm1304-523147.png",
+                                            "subtitle": "¿Puedo usar mi tarjeta de débito en establecimientos comerciales que tengan terminales POS?",                                            
                                             "buttons": [
                                                 {
                                                 "title": "Ver Respuesta",
@@ -830,8 +817,7 @@ def makeResponse(req):
                                             },
                                             {
                                             "title": "¿Costo del mantenimiento al mes?",
-                                            "subtitle": "¿Cuánto pago al mes por mantenimiento de mi Cuenta Ganadora",
-                                            "image_url": "https://www.bbva.com.co/fbin/mult/TarjetasDeCredito_DetalleProducto_300x257_BBVAClasica_tcm1304-523147.png",
+                                            "subtitle": "¿Cuánto pago al mes por mantenimiento de mi Cuenta Ganadora",                                            
                                             "buttons": [
                                                 {
                                                 "title": "Ver Respuesta",
