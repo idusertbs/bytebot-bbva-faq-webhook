@@ -466,6 +466,11 @@ def makeResponse(req):
                 "speech": "",
                 "messages": [
                     {
+                    "type": 0,
+                    "platform": "facebook",
+                    "speech": "Tu búsqueda coincide con la siguiente pregunta"
+                    },
+                    {
                     "type": 4,
                     "platform": "facebook",
                     "payload": {
@@ -476,7 +481,7 @@ def makeResponse(req):
                             "template_type": "generic",
                             "elements": [
                                 {
-                                "title": "Cuenta sueldo bimoneda",
+                                "title": "Cuenta Sueldo Bimoneda",
                                 "subtitle": "¿Qué es una cuenta sueldo bimoneda?",
                                 "buttons": [
                                     {
@@ -501,6 +506,11 @@ def makeResponse(req):
                 "speech": speech,
                 "messages": [
                     {
+                    "type": 0,
+                    "platform": "facebook",
+                    "speech": "Tu búsqueda coincide con la siguiente pregunta"
+                    },
+                    {
                     "type": 4,
                     "platform": "facebook",
                     "payload": {
@@ -511,8 +521,8 @@ def makeResponse(req):
                             "template_type": "generic",
                             "elements": [
                                 {
-                                "title": "Cuenta sueldo bimoneda",
-                                "subtitle": "¿Qué es una cuenta sueldo bimoneda?",
+                                "title": "Cuenta Ganadora Bimoneda",
+                                "subtitle": "¿Qué es una cuenta ganadora bimoneda?",
                                 "buttons": [
                                     {
                                     "type": "postback",
