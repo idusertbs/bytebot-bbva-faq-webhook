@@ -333,7 +333,7 @@ def makeResponse(req):
                                 {
                                 "type": 0,
                                 "platform": "facebook",
-                                "speech": "tal vez te referiste a lo siguiente: 🤔"
+                                "speech": "Tal vez te referiste a lo siguiente: 🤔"
                                 },
                                 {
                                 "type": 4,
@@ -395,7 +395,7 @@ def makeResponse(req):
                                 {
                                 "type": 0,
                                 "platform": "facebook",
-                                "speech": "Tu búsqueda coincide con las siguientes preguntas:"
+                                "speech": "Tal vez te referiste a lo siguiente: 🤔"
                                 },
                                 {
                                 "type": 4,
@@ -462,7 +462,7 @@ def makeResponse(req):
                     {
                     "type": 0,
                     "platform": "facebook",
-                    "speech": "Tu búsqueda coincide con la siguiente pregunta"
+                    "speech": "Tal vez te referiste a lo siguiente: 🤔"
                     },
                     {
                     "type": 4,
@@ -502,7 +502,7 @@ def makeResponse(req):
                     {
                     "type": 0,
                     "platform": "facebook",
-                    "speech": "Tu búsqueda coincide con la siguiente pregunta"
+                    "speech": "Tal vez te referiste a lo siguiente: 🤔"
                     },
                     {
                     "type": 4,
@@ -548,7 +548,7 @@ def makeResponse(req):
                     {
                     "type": 0,
                     "platform": "facebook",
-                    "speech": "Tu búsqueda coincide con la siguiente pregunta"
+                    "speech": "Tal vez te referiste a lo siguiente: 🤔"
                     },
                     {
                     "type": 4,
@@ -588,7 +588,7 @@ def makeResponse(req):
                     {
                     "type": 0,
                     "platform": "facebook",
-                    "speech": "Tu búsqueda coincide con la siguiente pregunta"
+                    "speech": "Tal vez te referiste a lo siguiente: 🤔"
                     },
                     {
                     "type": 4,
@@ -633,7 +633,7 @@ def makeResponse(req):
                                 {
                                 "type": 0,
                                 "platform": "facebook",
-                                "speech": "Tu búsqueda coincide con las siguientes preguntas:"
+                                "speech": "Tal vez te referiste a lo siguiente: 🤔"
                                 },
                                 {
                                 "type": 4,
@@ -684,7 +684,7 @@ def makeResponse(req):
                                 {
                                 "type": 0,
                                 "platform": "facebook",
-                                "speech": "Tu búsqueda coincide con las siguientes preguntas:"
+                                "speech": "Tal vez te referiste a lo siguiente: 🤔"
                                 },
                                 {
                                 "type": 4,
@@ -740,7 +740,7 @@ def makeResponse(req):
                                 {
                                 "type": 0,
                                 "platform": "facebook",
-                                "speech": "Tu búsqueda coincide con las siguientes preguntas:"
+                                "speech": "Tal vez te referiste a lo siguiente: 🤔"
                                 },
                                 {
                                 "type": 4,
@@ -791,7 +791,7 @@ def makeResponse(req):
                                 {
                                 "type": 0,
                                 "platform": "facebook",
-                                "speech": "Tu búsqueda coincide con las siguientes preguntas:"
+                                "speech": "Tal vez te referiste a lo siguiente: 🤔"
                                 },
                                 {
                                 "type": 4,
@@ -847,7 +847,7 @@ def makeResponse(req):
                     {
                     "type": 0,
                     "platform": "facebook",
-                    "speech": "Tu búsqueda coincide con la siguiente pregunta"
+                    "speech": "Tal vez te referiste a lo siguiente: 🤔"
                     },
                     {
                     "type": 4,
@@ -887,7 +887,7 @@ def makeResponse(req):
                     {
                     "type": 0,
                     "platform": "facebook",
-                    "speech": "Tu búsqueda coincide con la siguiente pregunta"
+                    "speech": "Tal vez te referiste a lo siguiente: 🤔"
                     },
                     {
                     "type": 4,
@@ -932,7 +932,7 @@ def makeResponse(req):
                     {
                     "type": 0,
                     "platform": "facebook",
-                    "speech": "Tu búsqueda coincide con la siguiente pregunta"
+                    "speech": "Tal vez te referiste a lo siguiente: 🤔"
                     },
                     {
                     "type": 4,
@@ -990,7 +990,7 @@ def makeResponse(req):
                     {
                     "type": 0,
                     "platform": "facebook",
-                    "speech": "Tu búsqueda coincide con la siguiente pregunta"
+                    "speech": "Tal vez te referiste a lo siguiente: 🤔"
                     },
                     {
                     "type": 4,
@@ -1029,7 +1029,7 @@ def makeResponse(req):
                     {
                     "type": 0,
                     "platform": "facebook",
-                    "speech": "Tu búsqueda coincide con la siguiente pregunta"
+                    "speech": "Tal vez te referiste a lo siguiente: 🤔"
                     },
                     {
                     "type": 4,
@@ -1072,7 +1072,7 @@ def makeResponse(req):
                     {
                     "type": 0,
                     "platform": "facebook",
-                    "speech": "Tu búsqueda coincide con la siguiente pregunta"
+                    "speech": "Tal vez te referiste a lo siguiente: 🤔"
                     },
                     {
                     "type": 4,
@@ -1129,7 +1129,7 @@ def makeResponse(req):
                     {
                     "type": 0,
                     "platform": "facebook",
-                    "speech": "Tu búsqueda coincide con la siguiente pregunta"
+                    "speech": "Tal vez te referiste a lo siguiente: 🤔"
                     },
                     {
                     "type": 4,
@@ -1169,7 +1169,7 @@ def makeResponse(req):
                     {
                     "type": 0,
                     "platform": "facebook",
-                    "speech": "Tu búsqueda coincide con la siguiente pregunta"
+                    "speech": "Tal vez te referiste a lo siguiente: 🤔"
                     },
                     {
                     "type": 4,
@@ -1213,7 +1213,7 @@ def makeResponse(req):
                     {
                     "type": 0,
                     "platform": "facebook",
-                    "speech": "Tu búsqueda coincide con la siguiente pregunta"
+                    "speech": "Tal vez te referiste a lo siguiente: 🤔"
                     },
                     {
                     "type": 4,
@@ -1253,7 +1253,7 @@ def makeResponse(req):
                     {
                     "type": 0,
                     "platform": "facebook",
-                    "speech": "Tu búsqueda coincide con la siguiente pregunta"
+                    "speech": "Tal vez te referiste a lo siguiente: 🤔"
                     },
                     {
                     "type": 4,
@@ -1297,7 +1297,7 @@ def makeResponse(req):
                     {
                     "type": 0,
                     "platform": "facebook",
-                    "speech": "Tu búsqueda coincide con la siguiente pregunta"
+                    "speech": "Tal vez te referiste a lo siguiente: 🤔"
                     },
                     {
                     "type": 4,
@@ -1355,7 +1355,7 @@ def makeResponse(req):
                     {
                     "type": 0,
                     "platform": "facebook",
-                    "speech": "Tu búsqueda coincide con la siguiente pregunta"
+                    "speech": "Tal vez te referiste a lo siguiente: 🤔"
                     },
                     {
                     "type": 4,
@@ -1395,7 +1395,7 @@ def makeResponse(req):
                     {
                     "type": 0,
                     "platform": "facebook",
-                    "speech": "Tu búsqueda coincide con la siguiente pregunta"
+                    "speech": "Tal vez te referiste a lo siguiente: 🤔"
                     },
                     {
                     "type": 4,
