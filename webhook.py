@@ -456,6 +456,81 @@ def makeResponse(req):
                             ]
             }
 
+    if intentName == "c.palabras.sueltas.bimoneda-next":
+        parameters = result.get("parameters")
+        tiposdeproducto = parameters.get("tiposdeproducto")
+
+        if tiposdeproducto == "Cuenta.Sueldo":
+            speech = ""
+            return {
+                "speech": "",
+                "messages": [
+                    {
+                    "type": 4,
+                    "platform": "facebook",
+                    "payload": {
+                        "facebook": {
+                        "attachment": {
+                            "type": "template",
+                            "payload": {
+                            "template_type": "generic",
+                            "elements": [
+                                {
+                                "title": "Cuenta sueldo bimoneda",
+                                "subtitle": "¿Qué es una cuenta sueldo bimoneda?",
+                                "buttons": [
+                                    {
+                                    "type": "postback",
+                                    "title": "Ver respuesta",
+                                    "payload": "cs_from_lista_sucesiva_info_bimoneda"
+                                    }
+                                ]
+                                }
+                            ]
+                            }
+                        }
+                        }
+                    }
+                    }
+                ]
+                
+            }
+        else:
+            speech = "Sí, siempre."
+            return {
+                "speech": speech,
+                "messages": [
+                    {
+                    "type": 4,
+                    "platform": "facebook",
+                    "payload": {
+                        "facebook": {
+                        "attachment": {
+                            "type": "template",
+                            "payload": {
+                            "template_type": "generic",
+                            "elements": [
+                                {
+                                "title": "Cuenta sueldo bimoneda",
+                                "subtitle": "¿Qué es una cuenta sueldo bimoneda?",
+                                "buttons": [
+                                    {
+                                    "type": "postback",
+                                    "title": "Ver respuesta",
+                                    "payload": "cg_from_lista_sucesiva_info_bimoneda"
+                                    }
+                                ]
+                                }
+                            ]
+                            }
+                        }
+                        }
+                    }
+                    }
+                ]
+                
+            }
+
 
 
 
