@@ -665,7 +665,7 @@ def makeResponse(req):
                                             ]
                                             },
                                             {
-                                            "title": "¿Costo del mantenimiento al mes?",
+                                            "title": "¿Mi saldo está protegido?",
                                             "subtitle": "¿Mi saldo está cubierto por el Fondo de Seguros de Depósito?",
                                             "image_url": "https://www.bbva.com.co/fbin/mult/TarjetasDeCredito_DetalleProducto_300x257_BBVAClasica_tcm1304-523147.png",
                                             "buttons": [
@@ -706,8 +706,8 @@ def makeResponse(req):
                                         "top_element_style": "compact",
                                         "elements": [
                                             {
-                                            "title": "¿Uso de mi tarjeta de débito en terminales POS?",
-                                            "subtitle": "¿Puedo usar mi tarjeta de débito en establecimientos comerciales que tengan terminales POS?",
+                                            "title": "Disposición de Fondos",
+                                            "subtitle": "¿Puedo disponer de los fondos en cualquier momento?",
                                             "image_url": "https://www.bbva.com.co/fbin/mult/TarjetasDeCredito_DetalleProducto_300x257_BBVAClasica_tcm1304-523147.png",
                                             "buttons": [
                                                 {
@@ -718,8 +718,8 @@ def makeResponse(req):
                                             ]
                                             },
                                             {
-                                            "title": "¿Costo del mantenimiento al mes?",
-                                            "subtitle": "¿Cuánto pago al mes por mantenimiento de mi Cuenta y mi Tarjeta de Débito?",
+                                            "title": "¿Mi saldo está protegido?",
+                                            "subtitle": "¿Mi saldo está cubierto por el Fondo de Seguros de Depósito?",
                                             "image_url": "https://www.bbva.com.co/fbin/mult/TarjetasDeCredito_DetalleProducto_300x257_BBVAClasica_tcm1304-523147.png",
                                             "buttons": [
                                                 {
@@ -777,7 +777,7 @@ def makeResponse(req):
                                             },
                                             {
                                             "title": "¿Costo del mantenimiento al mes?",
-                                            "subtitle": "¿Cuánto pago al mes por mantenimiento de mi Cuenta?",
+                                            "subtitle": "¿Cuánto pago al mes por mantenimiento de mi Cuenta y mi Tarjeta de Débito?",
                                             "image_url": "https://www.bbva.com.co/fbin/mult/TarjetasDeCredito_DetalleProducto_300x257_BBVAClasica_tcm1304-523147.png",
                                             "buttons": [
                                                 {
@@ -817,8 +817,8 @@ def makeResponse(req):
                                         "top_element_style": "compact",
                                         "elements": [
                                             {
-                                            "title": "Disposición de Fondos",
-                                            "subtitle": "¿Puedo disponer de los fondos en cualquier momento?",
+                                            "title": "¿Uso de mi tarjeta de débito en terminales POS?",
+                                            "subtitle": "¿Puedo usar mi tarjeta de débito en establecimientos comerciales que tengan terminales POS?",
                                             "image_url": "https://www.bbva.com.co/fbin/mult/TarjetasDeCredito_DetalleProducto_300x257_BBVAClasica_tcm1304-523147.png",
                                             "buttons": [
                                                 {
@@ -829,8 +829,8 @@ def makeResponse(req):
                                             ]
                                             },
                                             {
-                                            "title": "¿Mi saldo está protegido?",
-                                            "subtitle": "¿Mi saldo está cubierto por el Fondo de Seguros de Depósito?",
+                                            "title": "¿Costo del mantenimiento al mes?",
+                                            "subtitle": "¿Cuánto pago al mes por mantenimiento de mi Cuenta Ganadora",
                                             "image_url": "https://www.bbva.com.co/fbin/mult/TarjetasDeCredito_DetalleProducto_300x257_BBVAClasica_tcm1304-523147.png",
                                             "buttons": [
                                                 {
