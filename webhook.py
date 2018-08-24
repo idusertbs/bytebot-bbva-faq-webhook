@@ -326,7 +326,7 @@ def makeResponse(req):
         tiposdeproducto = parameters.get("tiposdeproducto")
 
         if tiposdeproducto == "Cuenta.Sueldo":
-            speech = "Sí, siempre."
+            speech = ""
             return {
                 "speech": "",
                 "messages": [
@@ -394,14 +394,66 @@ def makeResponse(req):
             speech = "Sí, siempre."
             return {
                 "speech": speech,
-                "displayText": speech,
                 "messages": [
-				{
-					"type": 0,
-					"speech": speech,
-                    "platform": "facebook"
-				}
-			]
+                                {
+                                "type": 0,
+                                "platform": "facebook",
+                                "speech": "Tu búsqueda coincide con las siguientes preguntas:"
+                                },
+                                {
+                                "type": 4,
+                                "platform": "facebook",
+                                "payload": {
+                                    "facebook": {
+                                    "attachment": {
+                                        "type": "template",
+                                        "payload": {
+                                        "template_type": "list",
+                                        "top_element_style": "compact",
+                                        "elements": [
+                                            {
+                                            "title": "Operaciones Libres en Cajeros Automáticos",
+                                            "subtitle": "¿Cuántas operaciones libres tengo en Cajeros Automáticos del BBVA Continental?",
+                                            "image_url": "https://www.bbva.com.co/fbin/mult/TarjetasDeCredito_DetalleProducto_300x257_BBVAClasica_tcm1304-523147.png",
+                                            "buttons": [
+                                                {
+                                                "title": "Ver Respuesta",
+                                                "type": "postback",
+                                                "payload": "cg.from.lista.sucesiva.operaciones.ca"
+                                                }
+                                            ]
+                                            },
+                                            {
+                                            "title": "¿Cómo hago operaciones en la web?",
+                                            "subtitle": "¿Si abrí mi Cuenta por la web, ¿Cómo puedo realizar operaciones en ella?",
+                                            "image_url": "https://www.bbva.com.co/fbin/mult/TarjetasDeCredito_DetalleProducto_300x257_BBVAClasica_tcm1304-523147.png",
+                                            "buttons": [
+                                                {
+                                                "title": "Ver Respuesta",
+                                                "type": "postback",
+                                                "payload": "cg_from_lista_sucesiva_info_guia"
+                                                }
+                                            ]
+                                            },
+                                            {
+                                            "title": "Cantidad de Operaciones Libres",
+                                            "subtitle": "¿Cuántas operaciones libres tengo por ventanilla?",
+                                            "image_url": "https://www.bbva.com.co/fbin/mult/TarjetasDeCredito_DetalleProducto_300x257_BBVAClasica_tcm1304-523147.png",
+                                            "buttons": [
+                                                {
+                                                "title": "Ver Respuesta",
+                                                "type": "postback",
+                                                "payload": "cg_from_lista_sucesiva_operaciones_ventanilla"
+                                                }
+                                            ]
+                                            }
+                                        ]
+                                        }
+                                    }
+                                    }
+                                }
+                                }
+                            ]
             }
 
 
