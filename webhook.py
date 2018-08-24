@@ -333,7 +333,7 @@ def makeResponse(req):
                                 {
                                 "type": 0,
                                 "platform": "facebook",
-                                "speech": "Tu búsqueda coincide con las siguientes preguntas:"
+                                "speech": "tal vez te referiste a lo siguiente: 🤔"
                                 },
                                 {
                                 "type": 4,
