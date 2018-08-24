@@ -40,13 +40,13 @@ def makeResponse(req):
         tiposdeproducto = parameters.get("tiposdeproducto")
 
         if tiposdeproducto == "Cuenta.Sueldo":
-            speech = "¡Ya diste el primer paso :D!, ahora solo debes acercarte a nuestras oficinas para obtener la *Tarjeta de Débito* que te permitirá acceder a todos nuestros canales de atención: _Banca por Internet_, _Banca Móvil_, _Banca por Teléfono_, entre otros. Con tu Tarjeta de Débito podrás realizar operaciones, como *pagar tus servicios*, *realizar transferencias* y mucho más."
+            speech = "¡Ya diste el primer paso :)!, ahora solo debes acercarte a nuestras oficinas para obtener la Tarjeta de Débito que te permitirá acceder a todos nuestros canales de atención: Banca por Internet, Banca Móvil, Banca por Teléfono, entre otros. Con tu Tarjeta de Débito podrás realizar operaciones, como pagar tus servicios, realizar transferencias y mucho más."
             return {
                 "speech": speech,
                 "displayText": speech
             }
         else:
-            speech = "¡Ya diste el primer paso ;)!, ahora solo debes acercarte a nuestras oficinas para obtener la *Tarjeta de Débito* que te permitirá acceder a todos nuestros canales de atención: _Banca por Internet_, _Banca Móvil_, _Banca por Teléfono_, entre otros. Con tu Tarjeta de Débito podrás realizar operaciones, como *pagar tus servicios*, *realizar transferencias* y mucho más."
+            speech = "¡Ya diste el primer paso ;)!, ahora solo debes acercarte a nuestras oficinas para obtener la Tarjeta de Débito que te permitirá acceder a todos nuestros canales de atención: Banca por Internet, Banca Móvil, Banca por Teléfono, entre otros. Con tu Tarjeta de Débito podrás realizar operaciones, como pagar tus servicios, realizar transferencias y mucho más."
             return {
                 "speech": speech,
                 "displayText": speech,
@@ -64,13 +64,13 @@ def makeResponse(req):
         tiposdeproducto = parameters.get("tiposdeproducto")
 
         if tiposdeproducto == "Cuenta.Sueldo":
-            speech = "Puedes realizar *depósitos ilimitados, 2 operaciones sin costo* (retiros de dinero y transferencias entre cuentas) en la misma localidad donde se contrató tu cuenta."
+            speech = "Puedes realizar depósitos ilimitados, 2 operaciones sin costo (retiros de dinero y transferencias entre cuentas) en la misma localidad donde se contrató tu cuenta."
             return {
                 "speech": speech,
                 "displayText": speech
             }
         else:
-            speech = "Puedes realizar depósitos ilimitados *sin costo* y hasta 1 operación mensual sin costo por retiros de dinero y transferencias entre cuentas (en la misma localidad donde se contrató la cuenta)."
+            speech = "Puedes realizar depósitos ilimitados sin costo y hasta 1 operación mensual sin costo por retiros de dinero y transferencias entre cuentas (en la misma localidad donde se contrató la cuenta)."
             return {
                 "speech": speech,
                 "displayText": speech,
@@ -94,7 +94,7 @@ def makeResponse(req):
                 "displayText": speech
             }
         else:
-            speech = "*Ilimitados*: retiro de dinero a través de todos los cajeros BBVA a nivel nacional y transferencias entre cuentas (realizados en la misma localidad donde se contrató la cuenta) y consultas de saldos y movimientos."
+            speech = "Ilimitados: retiro de dinero a través de todos los cajeros BBVA a nivel nacional y transferencias entre cuentas (realizados en la misma localidad donde se contrató la cuenta) y consultas de saldos y movimientos."
             return {
                 "speech": speech,
                 "displayText": speech,
@@ -142,7 +142,7 @@ def makeResponse(req):
                 "displayText": speech
             }
         else:
-            speech = "*Sí*. Solo en caso de haber participado de la campaña en vigencia canjeando un premio por apertura, se realizará una retención por el importe y tiempo indicado en las condiciones de la misma."
+            speech = "Sí. Solo en caso de haber participado de la campaña en vigencia canjeando un premio por apertura, se realizará una retención por el importe y tiempo indicado en las condiciones de la misma."
             return {
                 "speech": speech,
                 "displayText": speech,
@@ -294,6 +294,117 @@ def makeResponse(req):
 				}
 			]
             }
+    
+    if intentName == "palabra.busqueda.":
+        parameters = result.get("parameters")
+        tiposdeproducto = parameters.get("tiposdeproducto")
+
+        if tiposdeproducto == "Cuenta.Sueldo":
+            speech = "Sí, siempre."
+            return {
+                "speech": speech,
+                "displayText": speech
+            }
+        else:
+            speech = "Sí, siempre."
+            return {
+                "speech": speech,
+                "displayText": speech,
+                "messages": [
+				{
+					"type": 0,
+					"speech": speech,
+                    "platform": "facebook"
+				}
+			]
+            }
+    
+    #-----------------------------------------
+
+    if intentName == "c.palabras.sueltas.operaciones-next":
+        parameters = result.get("parameters")
+        tiposdeproducto = parameters.get("tiposdeproducto")
+
+        if tiposdeproducto == "Cuenta.Sueldo":
+            speech = "Sí, siempre."
+            return {
+                "speech": "",
+                "messages": [
+                                {
+                                "type": 0,
+                                "platform": "facebook",
+                                "speech": "Tu búsqueda coincide con las siguientes preguntas:"
+                                },
+                                {
+                                "type": 4,
+                                "platform": "facebook",
+                                "payload": {
+                                    "facebook": {
+                                    "attachment": {
+                                        "type": "template",
+                                        "payload": {
+                                        "template_type": "list",
+                                        "top_element_style": "compact",
+                                        "elements": [
+                                            {
+                                            "title": "Operaciones Libres en Cajeros Automáticos",
+                                            "subtitle": "¿Cuántas operaciones libres tengo en Cajeros Automáticos del BBVA Continental?",
+                                            "image_url": "https://www.bbva.com.co/fbin/mult/TarjetasDeCredito_DetalleProducto_300x257_BBVAClasica_tcm1304-523147.png",
+                                            "buttons": [
+                                                {
+                                                "title": "Ver Respuesta",
+                                                "type": "postback",
+                                                "payload": "cs.from.lista.sucesiva.operaciones.ca"
+                                                }
+                                            ]
+                                            },
+                                            {
+                                            "title": "¿Cómo hago operaciones en la web?",
+                                            "subtitle": "¿Si abrí mi Cuenta por la web, ¿Cómo puedo realizar operaciones en ella?",
+                                            "image_url": "https://www.bbva.com.co/fbin/mult/TarjetasDeCredito_DetalleProducto_300x257_BBVAClasica_tcm1304-523147.png",
+                                            "buttons": [
+                                                {
+                                                "title": "Ver Respuesta",
+                                                "type": "postback",
+                                                "payload": "cs_from_lista_sucesiva_info_guia"
+                                                }
+                                            ]
+                                            },
+                                            {
+                                            "title": "Cantidad de Operaciones Libres",
+                                            "subtitle": "¿Cuántas operaciones libres tengo por ventanilla?",
+                                            "image_url": "https://www.bbva.com.co/fbin/mult/TarjetasDeCredito_DetalleProducto_300x257_BBVAClasica_tcm1304-523147.png",
+                                            "buttons": [
+                                                {
+                                                "title": "Ver Respuesta",
+                                                "type": "postback",
+                                                "payload": "cs_from_lista_sucesiva_operaciones_ventanilla"
+                                                }
+                                            ]
+                                            }
+                                        ]
+                                        }
+                                    }
+                                    }
+                                }
+                                }
+                            ]
+            }
+        else:
+            speech = "Sí, siempre."
+            return {
+                "speech": speech,
+                "displayText": speech,
+                "messages": [
+				{
+					"type": 0,
+					"speech": speech,
+                    "platform": "facebook"
+				}
+			]
+            }
+
+
 
 
 
