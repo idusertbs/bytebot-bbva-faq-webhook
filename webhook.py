@@ -848,6 +848,91 @@ def makeResponse(req):
                                 }
                             ]
             }
+    
+    if intentName == "c.palabras.sueltas.abrir-next":
+        parameters = result.get("parameters")
+        tiposdeproducto = parameters.get("tiposdeproducto")
+
+        if tiposdeproducto == "Cuenta.Sueldo":
+            speech = ""
+            return {
+                "speech": "",
+                "messages": [
+                    {
+                    "type": 0,
+                    "platform": "facebook",
+                    "speech": "Tu búsqueda coincide con la siguiente pregunta"
+                    },
+                    {
+                    "type": 4,
+                    "platform": "facebook",
+                    "payload": {
+                        "facebook": {
+                        "attachment": {
+                            "type": "template",
+                            "payload": {
+                            "template_type": "generic",
+                            "elements": [
+                                {
+                                "title": "Costo de apertura de cuenta sueldo",
+                                "subtitle": "¿Cuánto dinero necesito para abrir una Cuenta Sueldo?",
+                                "buttons": [
+                                    {
+                                    "type": "postback",
+                                    "title": "Ver respuesta",
+                                    "payload": "cs_from_lista_sucesiva_info_costos"
+                                    }
+                                ]
+                                }
+                            ]
+                            }
+                        }
+                        }
+                    }
+                    }
+                ]
+                
+            }
+        else:
+            speech = "Sí, siempre."
+            return {
+                "speech": speech,
+                "messages": [
+                    {
+                    "type": 0,
+                    "platform": "facebook",
+                    "speech": "Tu búsqueda coincide con la siguiente pregunta"
+                    },
+                    {
+                    "type": 4,
+                    "platform": "facebook",
+                    "payload": {
+                        "facebook": {
+                        "attachment": {
+                            "type": "template",
+                            "payload": {
+                            "template_type": "generic",
+                            "elements": [
+                                {
+                                "title": "Costo de apertura de cuenta ganadora",
+                                "subtitle": "¿Cuánto dinero necesito para abrir una Cuenta Ganadora?",
+                                "buttons": [
+                                    {
+                                    "type": "postback",
+                                    "title": "Ver respuesta",
+                                    "payload": "cg_from_lista_sucesiva_info_costos"
+                                    }
+                                ]
+                                }
+                            ]
+                            }
+                        }
+                        }
+                    }
+                    }
+                ]
+                
+            }
 
     
 
