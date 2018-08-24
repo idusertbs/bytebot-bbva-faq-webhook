@@ -986,6 +986,24 @@ def makeResponse(req):
                     {
                     "type": 0,
                     "platform": "facebook",
+                    "speech": "La franquicia solo corresponde a la cuenta sueldo :/"
+                    }
+                ]
+                
+            }
+
+    if intentName == "c.palabras.sueltas.estados-next":
+        parameters = result.get("parameters")
+        tiposdeproducto = parameters.get("tiposdeproducto")
+
+        if tiposdeproducto == "Cuenta.Sueldo":
+            speech = ""
+            return {
+                "speech": "",
+                "messages": [
+                    {
+                    "type": 0,
+                    "platform": "facebook",
                     "speech": "Tu búsqueda coincide con la siguiente pregunta"
                     },
                     {
@@ -999,13 +1017,12 @@ def makeResponse(req):
                             "template_type": "generic",
                             "elements": [
                                 {
-                                "title": "Franquicia en mi Cuenta Sueldo",
-                                "subtitle": "¿Qué es una franquicia en mi cuenta Sueldo?",
+                                "title": "¿Mensualmente recibo estados de cuenta?",
                                 "buttons": [
                                     {
                                     "type": "postback",
                                     "title": "Ver respuesta",
-                                    "payload": "cg_from_lista_sucesiva_info_franquicias"
+                                    "payload": "cs_from_lista_sucesiva_info_estados"
                                     }
                                 ]
                                 }
@@ -1018,6 +1035,328 @@ def makeResponse(req):
                 ]
                 
             }
+        else:
+            speech = "Sí, siempre."
+            return {
+                "speech": speech,
+                "messages": [
+                    {
+                    "type": 0,
+                    "platform": "facebook",
+                    "speech": "Tu búsqueda coincide con la siguiente pregunta"
+                    },
+                    {
+                    "type": 4,
+                    "platform": "facebook",
+                    "payload": {
+                        "facebook": {
+                        "attachment": {
+                            "type": "template",
+                            "payload": {
+                            "template_type": "generic",
+                            "elements": [
+                                {
+                                "title": "¿Mensualmente recibo estados de cuenta?",
+                                "buttons": [
+                                    {
+                                    "type": "postback",
+                                    "title": "Ver respuesta",
+                                    "payload": "cg_from_lista_sucesiva_info_estados"
+                                    }
+                                ]
+                                }
+                            ]
+                            }
+                        }
+                        }
+                    }
+                    }
+                ]
+                
+            }
+    if intentName == "c.palabras.sueltas.promociones-next":
+        parameters = result.get("parameters")
+        tiposdeproducto = parameters.get("tiposdeproducto")
+
+        if tiposdeproducto == "Cuenta.Ganadora":
+            speech = ""
+            return {
+                "speech": "",
+                "messages": [
+                    {
+                    "type": 0,
+                    "platform": "facebook",
+                    "speech": "Tu búsqueda coincide con la siguiente pregunta"
+                    },
+                    {
+                    "type": 4,
+                    "platform": "facebook",
+                    "payload": {
+                        "facebook": {
+                        "attachment": {
+                            "type": "template",
+                            "payload": {
+                            "template_type": "generic",
+                            "elements": [
+                                {
+                                "title": "¿Cómo participo de los sorteos?",
+                                "buttons": [
+                                    {
+                                    "type": "postback",
+                                    "title": "Ver respuesta",
+                                    "payload": "cg_from_lista_sucesiva_info_sorteos"
+                                    }
+                                ]
+                                }
+                            ]
+                            }
+                        }
+                        }
+                    }
+                    }
+                ]
+                
+            }
+        else:
+            speech = "Sí, siempre."
+            return {
+                "speech": speech,
+                "messages": [
+                    {
+                    "type": 0,
+                    "platform": "facebook",
+                    "speech": "Los sorteos o ese tipo de promociones solo corresponden a la cuenta ganadora :/"
+                    }
+                ]
+                
+            }
+    
+    if intentName == "c.palabras.sueltas.depositos-next":
+        parameters = result.get("parameters")
+        tiposdeproducto = parameters.get("tiposdeproducto")
+
+        if tiposdeproducto == "Cuenta.Sueldo":
+            speech = ""
+            return {
+                "speech": "",
+                "messages": [
+                    {
+                    "type": 0,
+                    "platform": "facebook",
+                    "speech": "Tu búsqueda coincide con la siguiente pregunta"
+                    },
+                    {
+                    "type": 4,
+                    "platform": "facebook",
+                    "payload": {
+                        "facebook": {
+                        "attachment": {
+                            "type": "template",
+                            "payload": {
+                            "template_type": "generic",
+                            "elements": [
+                                {
+                                "title": "¿Nuevos depósitos?",
+                                "subtitle": "¿Puedo hacer nuevos depósitos en mi Cuenta una vez abierta?",
+                                "buttons": [
+                                    {
+                                    "type": "postback",
+                                    "title": "Ver respuesta",
+                                    "payload": "cs_from_lista_sucesiva_operaciones_depositos"
+                                    }
+                                ]
+                                }
+                            ]
+                            }
+                        }
+                        }
+                    }
+                    }
+                ]
+                
+            }
+        else:
+            speech = "Sí, siempre."
+            return {
+                "speech": speech,
+                "messages": [
+                    {
+                    "type": 0,
+                    "platform": "facebook",
+                    "speech": "Tu búsqueda coincide con la siguiente pregunta"
+                    },
+                    {
+                    "type": 4,
+                    "platform": "facebook",
+                    "payload": {
+                        "facebook": {
+                        "attachment": {
+                            "type": "template",
+                            "payload": {
+                            "template_type": "generic",
+                            "elements": [
+                                {
+                                "title": "¿Nuevos depósitos?",
+                                "subtitle": "¿Puedo hacer nuevos depósitos en mi Cuenta una vez abierta?",
+                                "buttons": [
+                                    {
+                                    "type": "postback",
+                                    "title": "Ver respuesta",
+                                    "payload": "cg_from_lista_sucesiva_operaciones_depositos"
+                                    }
+                                ]
+                                }
+                            ]
+                            }
+                        }
+                        }
+                    }
+                    }
+                ]
+                
+            }
+    if intentName == "c.palabras.sueltas.seguro-next":
+        parameters = result.get("parameters")
+        tiposdeproducto = parameters.get("tiposdeproducto")
+
+        if tiposdeproducto == "Cuenta.Sueldo":
+            speech = ""
+            return {
+                "speech": "",
+                "messages": [
+                    {
+                    "type": 0,
+                    "platform": "facebook",
+                    "speech": "Tu búsqueda coincide con la siguiente pregunta"
+                    },
+                    {
+                    "type": 4,
+                    "platform": "facebook",
+                    "payload": {
+                        "facebook": {
+                        "attachment": {
+                            "type": "template",
+                            "payload": {
+                            "template_type": "generic",
+                            "elements": [
+                                {
+                                "title": "¿Mi saldo está protegido?",
+                                "subtitle": "¿Los saldos de mi Cuenta están cubiertos por el Fondo de Seguros de Depósito?",
+                                "buttons": [
+                                    {
+                                    "type": "postback",
+                                    "title": "Ver respuesta",
+                                    "payload": "cs_from_lista_sucesiva_info_seguros"
+                                    }
+                                ]
+                                }
+                            ]
+                            }
+                        }
+                        }
+                    }
+                    }
+                ]
+                
+            }
+        else:
+            speech = "Sí, siempre."
+            return {
+                "speech": speech,
+                "messages": [
+                    {
+                    "type": 0,
+                    "platform": "facebook",
+                    "speech": "Tu búsqueda coincide con la siguiente pregunta"
+                    },
+                    {
+                    "type": 4,
+                    "platform": "facebook",
+                    "payload": {
+                        "facebook": {
+                        "attachment": {
+                            "type": "template",
+                            "payload": {
+                            "template_type": "generic",
+                            "elements": [
+                                {
+                                "title": "¿Mi saldo está protegido?",
+                                "subtitle": "¿Los saldos de mi Cuenta están cubiertos por el Fondo de Seguros de Depósito?",
+                                "buttons": [
+                                    {
+                                    "type": "postback",
+                                    "title": "Ver respuesta",
+                                    "payload": "cg_from_lista_sucesiva_info_seguros"
+                                    }
+                                ]
+                                }
+                            ]
+                            }
+                        }
+                        }
+                    }
+                    }
+                ]
+                
+            }
+    if intentName == "c.palabras.sueltas.gano-next":
+        parameters = result.get("parameters")
+        tiposdeproducto = parameters.get("tiposdeproducto")
+
+        if tiposdeproducto == "Cuenta.Ganadora":
+            speech = ""
+            return {
+                "speech": "",
+                "messages": [
+                    {
+                    "type": 0,
+                    "platform": "facebook",
+                    "speech": "Tu búsqueda coincide con la siguiente pregunta"
+                    },
+                    {
+                    "type": 4,
+                    "platform": "facebook",
+                    "payload": {
+                        "facebook": {
+                        "attachment": {
+                            "type": "template",
+                            "payload": {
+                            "template_type": "generic",
+                            "elements": [
+                                {
+                                "title": "Ganancia de intereses",
+                                "subtitle": "¿Cada cuánto tiempo gano intereses?",
+                                "buttons": [
+                                    {
+                                    "type": "postback",
+                                    "title": "Ver respuesta",
+                                    "payload": "cg_from_lista_sucesiva_info_intereses"
+                                    }
+                                ]
+                                }
+                            ]
+                            }
+                        }
+                        }
+                    }
+                    }
+                ]
+                
+            }
+        else:
+            speech = "Sí, siempre."
+            return {
+                "speech": speech,
+                "messages": [
+                    {
+                    "type": 0,
+                    "platform": "facebook",
+                    "speech": "Los sorteos o ese tipo de promociones solo corresponden a la cuenta ganadora :/"
+                    }
+                ]
+                
+            }
+    
 
     
 
