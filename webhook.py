@@ -88,7 +88,7 @@ def makeResponse(req):
         tiposdeproducto = parameters.get("tiposdeproducto")
 
         if tiposdeproducto == "Cuenta.Sueldo":
-            speech = "En cajeros del BBVA Continental puedes retirar ilimitadamente sin costo a nivel nacional.\nAdemás, puedes retirar en todos los cajeros de la red VISA en la misma ciudad donde se abrió la cuenta según el ingreso neto mensual:\n\n- *1 retiro:* Hasta S/1,799.\n- *2 retiros:* Desde S/1,800 hasta S/3,499.\n- *4 retiros:* Desde S/3,500 hasta S/6,999.\n- *10 retiros:* Desde S/7,000 a más.\n\nPara disfrutar del beneficio la Cuenta Sueldo debe estar asociada a una tarjeta de crédito o débito del BBVA Continental y aplica después de recibir un mes de abono de sueldo."
+            speech = "En cajeros del BBVA Continental puedes retirar ilimitadamente sin costo a nivel nacional.\nAdemás, puedes retirar en todos los cajeros de la red VISA en la misma ciudad donde se abrió la cuenta según el ingreso neto mensual:\n\n- 1 retiro: Hasta S/1,799.\n- 2 retiros: Desde S/1,800 hasta S/3,499.\n- 4 retiros: Desde S/3,500 hasta S/6,999.\n- 10 retiros: Desde S/7,000 a más.\n\nPara disfrutar del beneficio la Cuenta Sueldo debe estar asociada a una tarjeta de crédito o débito del BBVA Continental y aplica después de recibir un mes de abono de sueldo."
             return {
                 "speech": speech,
                 "displayText": speech
@@ -213,7 +213,7 @@ def makeResponse(req):
                 "displayText": speech
             }
         else:
-            speech = "El mantenimiento de cuenta mensual es variable, de acuerdo al saldo medio de tu cuenta:\n\n- Hasta S/ 900 o $ 300: S/ 8.00 o $ 3.00, respectivamente.\n- Mayor a S/ 900 o $ 300: *SIN COSTO*."
+            speech = "El mantenimiento de cuenta mensual es variable, de acuerdo al saldo medio de tu cuenta:\n\n- Hasta S/ 900 o $ 300: S/ 8.00 o $ 3.00, respectivamente.\n- Mayor a S/ 900 o $ 300: SIN COSTO."
             return {
                 "speech": speech,
                 "displayText": speech,
