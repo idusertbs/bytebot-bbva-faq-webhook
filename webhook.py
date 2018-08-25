@@ -46,7 +46,7 @@ def makeResponse(req):
                 "displayText": speech
             }
         else:
-            speech = "¡Ya diste el primer paso ;)!, ahora solo debes acercarte a nuestras oficinas para obtener la Tarjeta de Débito que te permitirá acceder a todos nuestros canales de atención: Banca por Internet, Banca Móvil, Banca por Teléfono, entre otros. Con tu Tarjeta de Débito podrás realizar operaciones, como pagar tus servicios, realizar transferencias y mucho más."
+            speech = "¡Ya diste el primer paso :)!, ahora solo debes acercarte a nuestras oficinas para obtener la Tarjeta de Débito que te permitirá acceder a todos nuestros canales de atención: Banca por Internet, Banca Móvil, Banca por Teléfono, entre otros. Con tu Tarjeta de Débito podrás realizar operaciones, como pagar tus servicios, realizar transferencias y mucho más."
             return {
                 "speech": speech,
                 "displayText": speech,
