@@ -1428,7 +1428,1116 @@ def makeResponse(req):
                 
             }
 
+    ########################################################################################################################################
+
+    #-----------------------------------------
+
+    if intentName == "cc.palabras.sueltas.operaciones-next":
+        parameters = result.get("parameters")
+        tiposdeproducto = parameters.get("tiposdeproducto")
+
+        if tiposdeproducto == "Cuenta.Sueldo":
+            speech = ""
+            return {
+                "speech": "",
+                "messages": [
+                                {
+                                "type": 0,
+                                "platform": "facebook",
+                                "speech": "Tal vez te referiste a lo siguiente: 🤔"
+                                },
+                                {
+                                "type": 4,
+                                "platform": "facebook",
+                                "payload": {
+                                    "facebook": {
+                                    "attachment": {
+                                        "type": "template",
+                                        "payload": {
+                                        "template_type": "list",
+                                        "top_element_style": "compact",
+                                        "elements": [
+                                            {
+                                            "title": "Operaciones Libres en Cajeros Automáticos",
+                                            "subtitle": "¿Cuántas operaciones libres tengo en Cajeros Automáticos del BBVA Continental?",                                            
+                                            "buttons": [
+                                                {
+                                                "title": "Ver Respuesta",
+                                                "type": "postback",
+                                                "payload": "cs.from.lista.sucesiva.operaciones.ca"
+                                                }
+                                            ]
+                                            },
+                                            {
+                                            "title": "¿Cómo hago operaciones en la web?",
+                                            "subtitle": "¿Si abrí mi Cuenta por la web, ¿Cómo puedo realizar operaciones en ella?",                                            
+                                            "buttons": [
+                                                {
+                                                "title": "Ver Respuesta",
+                                                "type": "postback",
+                                                "payload": "cs_from_lista_sucesiva_info_guia"
+                                                }
+                                            ]
+                                            },
+                                            {
+                                            "title": "Cantidad de Operaciones Libres",
+                                            "subtitle": "¿Cuántas operaciones libres tengo por ventanilla?",                                            
+                                            "buttons": [
+                                                {
+                                                "title": "Ver Respuesta",
+                                                "type": "postback",
+                                                "payload": "cs_from_lista_sucesiva_operaciones_ventanilla"
+                                                }
+                                            ]
+                                            }
+                                        ]
+                                        }
+                                    }
+                                    }
+                                }
+                                }
+                            ]
+            }
+        else:
+            speech = "Sí, siempre."
+            return {
+                "speech": speech,
+                "messages": [
+                                {
+                                "type": 0,
+                                "platform": "facebook",
+                                "speech": "Tal vez te referiste a lo siguiente: 🤔"
+                                },
+                                {
+                                "type": 4,
+                                "platform": "facebook",
+                                "payload": {
+                                    "facebook": {
+                                    "attachment": {
+                                        "type": "template",
+                                        "payload": {
+                                        "template_type": "list",
+                                        "top_element_style": "compact",
+                                        "elements": [
+                                            {
+                                            "title": "Operaciones Libres en Cajeros Automáticos",
+                                            "subtitle": "¿Cuántas operaciones libres tengo en Cajeros Automáticos del BBVA Continental?",                                            
+                                            "buttons": [
+                                                {
+                                                "title": "Ver Respuesta",
+                                                "type": "postback",
+                                                "payload": "cg.from.lista.sucesiva.operaciones.ca"
+                                                }
+                                            ]
+                                            },
+                                            {
+                                            "title": "¿Cómo hago operaciones en la web?",
+                                            "subtitle": "¿Si abrí mi Cuenta por la web, ¿Cómo puedo realizar operaciones en ella?",                                            
+                                            "buttons": [
+                                                {
+                                                "title": "Ver Respuesta",
+                                                "type": "postback",
+                                                "payload": "cg_from_lista_sucesiva_info_guia"
+                                                }
+                                            ]
+                                            },
+                                            {
+                                            "title": "Cantidad de Operaciones Libres",
+                                            "subtitle": "¿Cuántas operaciones libres tengo por ventanilla?",                                            
+                                            "buttons": [
+                                                {
+                                                "title": "Ver Respuesta",
+                                                "type": "postback",
+                                                "payload": "cg_from_lista_sucesiva_operaciones_ventanilla"
+                                                }
+                                            ]
+                                            }
+                                        ]
+                                        }
+                                    }
+                                    }
+                                }
+                                }
+                            ]
+            }
+
+    if intentName == "c.palabras.sueltas.context.bimoneda":
+        contexts = result.get("contexts")
+        tiposdeproducto = contexts[0].get("tiposdeproducto")
+
+        if tiposdeproducto == "Cuenta.Sueldo":
+            speech = ""
+            return {
+                "speech": "",
+                "messages": [
+                    {
+                    "type": 0,
+                    "platform": "facebook",
+                    "speech": "Tal vez te referiste a lo siguiente: 🤔"
+                    },
+                    {
+                    "type": 4,
+                    "platform": "facebook",
+                    "payload": {
+                        "facebook": {
+                        "attachment": {
+                            "type": "template",
+                            "payload": {
+                            "template_type": "generic",
+                            "elements": [
+                                {
+                                "title": "Cuenta Sueldo Bimoneda",
+                                "subtitle": "¿Qué es una cuenta sueldo bimoneda?",
+                                "buttons": [
+                                    {
+                                    "type": "postback",
+                                    "title": "Ver respuesta",
+                                    "payload": "cs_from_lista_sucesiva_info_bimoneda"
+                                    }
+                                ]
+                                }
+                            ]
+                            }
+                        }
+                        }
+                    }
+                    }
+                ]
+                
+            }
+        else:
+            speech = "Sí, siempre."
+            return {
+                "speech": speech,
+                "messages": [
+                    {
+                    "type": 0,
+                    "platform": "facebook",
+                    "speech": "Tal vez te referiste a lo siguiente: 🤔"
+                    },
+                    {
+                    "type": 4,
+                    "platform": "facebook",
+                    "payload": {
+                        "facebook": {
+                        "attachment": {
+                            "type": "template",
+                            "payload": {
+                            "template_type": "generic",
+                            "elements": [
+                                {
+                                "title": "Cuenta Ganadora Bimoneda",
+                                "subtitle": "¿Qué es una cuenta ganadora bimoneda?",
+                                "buttons": [
+                                    {
+                                    "type": "postback",
+                                    "title": "Ver respuesta",
+                                    "payload": "cs_from_lista_sucesiva_info_mantenimiento"
+                                    }
+                                ]
+                                }
+                            ]
+                            }
+                        }
+                        }
+                    }
+                    }
+                ]
+                
+            }
     
+
+    if intentName == "cc.palabras.sueltas.mantenimiento-next":
+        parameters = result.get("parameters")
+        tiposdeproducto = parameters.get("tiposdeproducto")
+
+        if tiposdeproducto == "Cuenta.Sueldo":
+            speech = ""
+            return {
+                "speech": "",
+                "messages": [
+                    {
+                    "type": 0,
+                    "platform": "facebook",
+                    "speech": "Tal vez te referiste a lo siguiente: 🤔"
+                    },
+                    {
+                    "type": 4,
+                    "platform": "facebook",
+                    "payload": {
+                        "facebook": {
+                        "attachment": {
+                            "type": "template",
+                            "payload": {
+                            "template_type": "generic",
+                            "elements": [
+                                {
+                                "title": "Monto por Mantenimiento",
+                                "subtitle": "¿Cuánto pago al mes por mantenimiento de mi Cuenta Sueldo y mi Tarjeta de Débito?",
+                                "buttons": [
+                                    {
+                                    "type": "postback",
+                                    "title": "Ver respuesta",
+                                    "payload": "cg_from_lista_sucesiva_info_mantenimiento"
+                                    }
+                                ]
+                                }
+                            ]
+                            }
+                        }
+                        }
+                    }
+                    }
+                ]
+                
+            }
+        else:
+            speech = "Sí, siempre."
+            return {
+                "speech": speech,
+                "messages": [
+                    {
+                    "type": 0,
+                    "platform": "facebook",
+                    "speech": "Tal vez te referiste a lo siguiente: 🤔"
+                    },
+                    {
+                    "type": 4,
+                    "platform": "facebook",
+                    "payload": {
+                        "facebook": {
+                        "attachment": {
+                            "type": "template",
+                            "payload": {
+                            "template_type": "generic",
+                            "elements": [
+                                {
+                                "title": "Monto por Mantenimiento",
+                                "subtitle": "¿Cuánto pago al mes por mantenimiento de mi Cuenta Ganadora?",
+                                "buttons": [
+                                    {
+                                    "type": "postback",
+                                    "title": "Ver respuesta",
+                                    "payload": "cg_from_lista_sucesiva_info_bimoneda"
+                                    }
+                                ]
+                                }
+                            ]
+                            }
+                        }
+                        }
+                    }
+                    }
+                ]
+                
+            }
+    
+    if intentName == "cc.palabras.sueltas.fondo-next":
+        parameters = result.get("parameters")
+        tiposdeproducto = parameters.get("tiposdeproducto")
+
+        if tiposdeproducto == "Cuenta.Sueldo":
+            speech = ""
+            return {
+                "speech": "",
+                "messages": [
+                                {
+                                "type": 0,
+                                "platform": "facebook",
+                                "speech": "Tal vez te referiste a lo siguiente: 🤔"
+                                },
+                                {
+                                "type": 4,
+                                "platform": "facebook",
+                                "payload": {
+                                    "facebook": {
+                                    "attachment": {
+                                        "type": "template",
+                                        "payload": {
+                                        "template_type": "list",
+                                        "top_element_style": "compact",
+                                        "elements": [
+                                            {
+                                            "title": "Disposición de fondos",
+                                            "subtitle": "¿Puedo disponer de los fondos en cualquier momento?",                                            
+                                            "buttons": [
+                                                {
+                                                "title": "Ver Respuesta",
+                                                "type": "postback",
+                                                "payload": "cs_from_lista_sucesiva_info_fondos"
+                                                }
+                                            ]
+                                            },
+                                            {
+                                            "title": "¿Mi saldo está protegido?",
+                                            "subtitle": "¿Mi saldo está cubierto por el Fondo de Seguros de Depósito?",                                            
+                                            "buttons": [
+                                                {
+                                                "title": "Ver Respuesta",
+                                                "type": "postback",
+                                                "payload": "cs_from_lista_sucesiva_info_seguros"
+                                                }
+                                            ]
+                                            }
+                                        ]
+                                        }
+                                    }
+                                    }
+                                }
+                                }
+                            ]
+            }
+        else:
+            speech = "Sí, siempre."
+            return {
+                "speech": speech,
+                "messages": [
+                                {
+                                "type": 0,
+                                "platform": "facebook",
+                                "speech": "Tal vez te referiste a lo siguiente: 🤔"
+                                },
+                                {
+                                "type": 4,
+                                "platform": "facebook",
+                                "payload": {
+                                    "facebook": {
+                                    "attachment": {
+                                        "type": "template",
+                                        "payload": {
+                                        "template_type": "list",
+                                        "top_element_style": "compact",
+                                        "elements": [
+                                            {
+                                            "title": "Disposición de Fondos",
+                                            "subtitle": "¿Puedo disponer de los fondos en cualquier momento?",                                            
+                                            "buttons": [
+                                                {
+                                                "title": "Ver Respuesta",
+                                                "type": "postback",
+                                                "payload": "cg_from_lista_sucesiva_info_fondos"
+                                                }
+                                            ]
+                                            },
+                                            {
+                                            "title": "¿Mi saldo está protegido?",
+                                            "subtitle": "¿Mi saldo está cubierto por el Fondo de Seguros de Depósito?",                                            
+                                            "buttons": [
+                                                {
+                                                "title": "Ver Respuesta",
+                                                "type": "postback",
+                                                "payload": "cg_from_lista_sucesiva_info_seguros"
+                                                }
+                                            ]
+                                            }
+                                        ]
+                                        }
+                                    }
+                                    }
+                                }
+                                }
+                            ]
+            }
+    
+    if intentName == "cc.palabras.sueltas.tarjeta-next":
+        parameters = result.get("parameters")
+        tiposdeproducto = parameters.get("tiposdeproducto")
+
+        if tiposdeproducto == "Cuenta.Sueldo":
+            speech = ""
+            return {
+                "speech": "",
+                "messages": [
+                                {
+                                "type": 0,
+                                "platform": "facebook",
+                                "speech": "Tal vez te referiste a lo siguiente: 🤔"
+                                },
+                                {
+                                "type": 4,
+                                "platform": "facebook",
+                                "payload": {
+                                    "facebook": {
+                                    "attachment": {
+                                        "type": "template",
+                                        "payload": {
+                                        "template_type": "list",
+                                        "top_element_style": "compact",
+                                        "elements": [
+                                            {
+                                            "title": "¿Uso de mi tarjeta de débito en terminales POS?",
+                                            "subtitle": "¿Puedo usar mi tarjeta de débito en establecimientos comerciales que tengan terminales POS?",                                            
+                                            "buttons": [
+                                                {
+                                                "title": "Ver Respuesta",
+                                                "type": "postback",
+                                                "payload": "cs_from_lista_sucesiva_operaciones_ec"
+                                                }
+                                            ]
+                                            },
+                                            {
+                                            "title": "¿Costo del mantenimiento al mes?",
+                                            "subtitle": "¿Cuánto pago al mes por mantenimiento de mi Cuenta y mi Tarjeta de Débito?",                                            
+                                            "buttons": [
+                                                {
+                                                "title": "Ver Respuesta",
+                                                "type": "postback",
+                                                "payload": "cs_from_lista_sucesiva_info_mantenimiento"
+                                                }
+                                            ]
+                                            }
+                                        ]
+                                        }
+                                    }
+                                    }
+                                }
+                                }
+                            ]
+            }
+        else:
+            speech = "Sí, siempre."
+            return {
+                "speech": speech,
+                "messages": [
+                                {
+                                "type": 0,
+                                "platform": "facebook",
+                                "speech": "Tal vez te referiste a lo siguiente: 🤔"
+                                },
+                                {
+                                "type": 4,
+                                "platform": "facebook",
+                                "payload": {
+                                    "facebook": {
+                                    "attachment": {
+                                        "type": "template",
+                                        "payload": {
+                                        "template_type": "list",
+                                        "top_element_style": "compact",
+                                        "elements": [
+                                            {
+                                            "title": "¿Uso de mi tarjeta de débito en terminales POS?",
+                                            "subtitle": "¿Puedo usar mi tarjeta de débito en establecimientos comerciales que tengan terminales POS?",                                            
+                                            "buttons": [
+                                                {
+                                                "title": "Ver Respuesta",
+                                                "type": "postback",
+                                                "payload": "cg_from_lista_sucesiva_operaciones_ec"
+                                                }
+                                            ]
+                                            },
+                                            {
+                                            "title": "¿Costo del mantenimiento al mes?",
+                                            "subtitle": "¿Cuánto pago al mes por mantenimiento de mi Cuenta Ganadora",                                            
+                                            "buttons": [
+                                                {
+                                                "title": "Ver Respuesta",
+                                                "type": "postback",
+                                                "payload": "cg_from_lista_sucesiva_info_mantenimiento"
+                                                }
+                                            ]
+                                            }
+                                        ]
+                                        }
+                                    }
+                                    }
+                                }
+                                }
+                            ]
+            }
+    
+    if intentName == "cc.palabras.sueltas.abrir-next":
+        parameters = result.get("parameters")
+        tiposdeproducto = parameters.get("tiposdeproducto")
+
+        if tiposdeproducto == "Cuenta.Sueldo":
+            speech = ""
+            return {
+                "speech": "",
+                "messages": [
+                    {
+                    "type": 0,
+                    "platform": "facebook",
+                    "speech": "Tal vez te referiste a lo siguiente: 🤔"
+                    },
+                    {
+                    "type": 4,
+                    "platform": "facebook",
+                    "payload": {
+                        "facebook": {
+                        "attachment": {
+                            "type": "template",
+                            "payload": {
+                            "template_type": "generic",
+                            "elements": [
+                                {
+                                "title": "Costo de apertura de cuenta sueldo",
+                                "subtitle": "¿Cuánto dinero necesito para abrir una Cuenta Sueldo?",
+                                "buttons": [
+                                    {
+                                    "type": "postback",
+                                    "title": "Ver respuesta",
+                                    "payload": "cs_from_lista_sucesiva_info_costos"
+                                    }
+                                ]
+                                }
+                            ]
+                            }
+                        }
+                        }
+                    }
+                    }
+                ]
+                
+            }
+        else:
+            speech = "Sí, siempre."
+            return {
+                "speech": speech,
+                "messages": [
+                    {
+                    "type": 0,
+                    "platform": "facebook",
+                    "speech": "Tal vez te referiste a lo siguiente: 🤔"
+                    },
+                    {
+                    "type": 4,
+                    "platform": "facebook",
+                    "payload": {
+                        "facebook": {
+                        "attachment": {
+                            "type": "template",
+                            "payload": {
+                            "template_type": "generic",
+                            "elements": [
+                                {
+                                "title": "Costo de apertura de cuenta ganadora",
+                                "subtitle": "¿Cuánto dinero necesito para abrir una Cuenta Ganadora?",
+                                "buttons": [
+                                    {
+                                    "type": "postback",
+                                    "title": "Ver respuesta",
+                                    "payload": "cg_from_lista_sucesiva_info_costos"
+                                    }
+                                ]
+                                }
+                            ]
+                            }
+                        }
+                        }
+                    }
+                    }
+                ]
+                
+            }
+
+    if intentName == "cc.palabras.sueltas.franquicia-next":
+        parameters = result.get("parameters")
+        tiposdeproducto = parameters.get("tiposdeproducto")
+
+        if tiposdeproducto == "Cuenta.Sueldo":
+            speech = ""
+            return {
+                "speech": "",
+                "messages": [
+                    {
+                    "type": 0,
+                    "platform": "facebook",
+                    "speech": "Tal vez te referiste a lo siguiente: 🤔"
+                    },
+                    {
+                    "type": 4,
+                    "platform": "facebook",
+                    "payload": {
+                        "facebook": {
+                        "attachment": {
+                            "type": "template",
+                            "payload": {
+                            "template_type": "generic",
+                            "elements": [
+                                {
+                                "title": "Franquicia en mi Cuenta Sueldo",
+                                "subtitle": "¿Qué es una franquicia en mi cuenta Sueldo?",
+                                "buttons": [
+                                    {
+                                    "type": "postback",
+                                    "title": "Ver respuesta",
+                                    "payload": "cs_from_lista_sucesiva_info_franquicias"
+                                    }
+                                ]
+                                }
+                            ]
+                            }
+                        }
+                        }
+                    }
+                    }
+                ]
+                
+            }
+        else:
+            speech = "Sí, siempre."
+            return {
+                "speech": speech,
+                "messages": [
+                    {
+                    "type": 0,
+                    "platform": "facebook",
+                    "speech": "La franquicia solo corresponde a la cuenta sueldo :/"
+                    }
+                ]
+                
+            }
+
+    if intentName == "cc.palabras.sueltas.estados-next":
+        parameters = result.get("parameters")
+        tiposdeproducto = parameters.get("tiposdeproducto")
+
+        if tiposdeproducto == "Cuenta.Sueldo":
+            speech = ""
+            return {
+                "speech": "",
+                "messages": [
+                    {
+                    "type": 0,
+                    "platform": "facebook",
+                    "speech": "Tal vez te referiste a lo siguiente: 🤔"
+                    },
+                    {
+                    "type": 4,
+                    "platform": "facebook",
+                    "payload": {
+                        "facebook": {
+                        "attachment": {
+                            "type": "template",
+                            "payload": {
+                            "template_type": "generic",
+                            "elements": [
+                                {
+                                "title": "¿Mensualmente recibo estados de cuenta?",
+                                "buttons": [
+                                    {
+                                    "type": "postback",
+                                    "title": "Ver respuesta",
+                                    "payload": "cs_from_lista_sucesiva_info_estados"
+                                    }
+                                ]
+                                }
+                            ]
+                            }
+                        }
+                        }
+                    }
+                    }
+                ]
+                
+            }
+        else:
+            speech = "Sí, siempre."
+            return {
+                "speech": speech,
+                "messages": [
+                    {
+                    "type": 0,
+                    "platform": "facebook",
+                    "speech": "Tal vez te referiste a lo siguiente: 🤔"
+                    },
+                    {
+                    "type": 4,
+                    "platform": "facebook",
+                    "payload": {
+                        "facebook": {
+                        "attachment": {
+                            "type": "template",
+                            "payload": {
+                            "template_type": "generic",
+                            "elements": [
+                                {
+                                "title": "¿Mensualmente recibo estados de cuenta?",
+                                "buttons": [
+                                    {
+                                    "type": "postback",
+                                    "title": "Ver respuesta",
+                                    "payload": "cg_from_lista_sucesiva_info_estados"
+                                    }
+                                ]
+                                }
+                            ]
+                            }
+                        }
+                        }
+                    }
+                    }
+                ]
+                
+            }
+    if intentName == "cc.palabras.sueltas.promociones-next":
+        parameters = result.get("parameters")
+        tiposdeproducto = parameters.get("tiposdeproducto")
+
+        if tiposdeproducto == "Cuenta.Ganadora":
+            speech = ""
+            return {
+                "speech": "",
+                "messages": [
+                    {
+                    "type": 0,
+                    "platform": "facebook",
+                    "speech": "Tal vez te referiste a lo siguiente: 🤔"
+                    },
+                    {
+                    "type": 4,
+                    "platform": "facebook",
+                    "payload": {
+                        "facebook": {
+                        "attachment": {
+                            "type": "template",
+                            "payload": {
+                            "template_type": "generic",
+                            "elements": [
+                                {
+                                "title": "¿Cómo participo de los sorteos?",
+                                "buttons": [
+                                    {
+                                    "type": "postback",
+                                    "title": "Ver respuesta",
+                                    "payload": "cg_from_lista_sucesiva_info_sorteos"
+                                    }
+                                ]
+                                }
+                            ]
+                            }
+                        }
+                        }
+                    }
+                    }
+                ]
+                
+            }
+        else:
+            speech = "Sí, siempre."
+            return {
+                "speech": speech,
+                "messages": [
+                    {
+                    "type": 0,
+                    "platform": "facebook",
+                    "speech": "Los sorteos o ese tipo de promociones solo corresponden a la cuenta ganadora :/"
+                    }
+                ]
+                
+            }
+    
+    if intentName == "cc.palabras.sueltas.depositos-next":
+        parameters = result.get("parameters")
+        tiposdeproducto = parameters.get("tiposdeproducto")
+
+        if tiposdeproducto == "Cuenta.Sueldo":
+            speech = ""
+            return {
+                "speech": "",
+                "messages": [
+                    {
+                    "type": 0,
+                    "platform": "facebook",
+                    "speech": "Tal vez te referiste a lo siguiente: 🤔"
+                    },
+                    {
+                    "type": 4,
+                    "platform": "facebook",
+                    "payload": {
+                        "facebook": {
+                        "attachment": {
+                            "type": "template",
+                            "payload": {
+                            "template_type": "generic",
+                            "elements": [
+                                {
+                                "title": "¿Nuevos depósitos?",
+                                "subtitle": "¿Puedo hacer nuevos depósitos en mi Cuenta una vez abierta?",
+                                "buttons": [
+                                    {
+                                    "type": "postback",
+                                    "title": "Ver respuesta",
+                                    "payload": "cs_from_lista_sucesiva_operaciones_depositos"
+                                    }
+                                ]
+                                }
+                            ]
+                            }
+                        }
+                        }
+                    }
+                    }
+                ]
+                
+            }
+        else:
+            speech = "Sí, siempre."
+            return {
+                "speech": speech,
+                "messages": [
+                    {
+                    "type": 0,
+                    "platform": "facebook",
+                    "speech": "Tal vez te referiste a lo siguiente: 🤔"
+                    },
+                    {
+                    "type": 4,
+                    "platform": "facebook",
+                    "payload": {
+                        "facebook": {
+                        "attachment": {
+                            "type": "template",
+                            "payload": {
+                            "template_type": "generic",
+                            "elements": [
+                                {
+                                "title": "¿Nuevos depósitos?",
+                                "subtitle": "¿Puedo hacer nuevos depósitos en mi Cuenta una vez abierta?",
+                                "buttons": [
+                                    {
+                                    "type": "postback",
+                                    "title": "Ver respuesta",
+                                    "payload": "cg_from_lista_sucesiva_operaciones_depositos"
+                                    }
+                                ]
+                                }
+                            ]
+                            }
+                        }
+                        }
+                    }
+                    }
+                ]
+                
+            }
+    if intentName == "cc.palabras.sueltas.seguro-next":
+        parameters = result.get("parameters")
+        tiposdeproducto = parameters.get("tiposdeproducto")
+
+        if tiposdeproducto == "Cuenta.Sueldo":
+            speech = ""
+            return {
+                "speech": "",
+                "messages": [
+                    {
+                    "type": 0,
+                    "platform": "facebook",
+                    "speech": "Tal vez te referiste a lo siguiente: 🤔"
+                    },
+                    {
+                    "type": 4,
+                    "platform": "facebook",
+                    "payload": {
+                        "facebook": {
+                        "attachment": {
+                            "type": "template",
+                            "payload": {
+                            "template_type": "generic",
+                            "elements": [
+                                {
+                                "title": "¿Mi saldo está protegido?",
+                                "subtitle": "¿Los saldos de mi Cuenta están cubiertos por el Fondo de Seguros de Depósito?",
+                                "buttons": [
+                                    {
+                                    "type": "postback",
+                                    "title": "Ver respuesta",
+                                    "payload": "cs_from_lista_sucesiva_info_seguros"
+                                    }
+                                ]
+                                }
+                            ]
+                            }
+                        }
+                        }
+                    }
+                    }
+                ]
+                
+            }
+        else:
+            speech = "Sí, siempre."
+            return {
+                "speech": speech,
+                "messages": [
+                    {
+                    "type": 0,
+                    "platform": "facebook",
+                    "speech": "Tal vez te referiste a lo siguiente: 🤔"
+                    },
+                    {
+                    "type": 4,
+                    "platform": "facebook",
+                    "payload": {
+                        "facebook": {
+                        "attachment": {
+                            "type": "template",
+                            "payload": {
+                            "template_type": "generic",
+                            "elements": [
+                                {
+                                "title": "¿Mi saldo está protegido?",
+                                "subtitle": "¿Los saldos de mi Cuenta están cubiertos por el Fondo de Seguros de Depósito?",
+                                "buttons": [
+                                    {
+                                    "type": "postback",
+                                    "title": "Ver respuesta",
+                                    "payload": "cg_from_lista_sucesiva_info_seguros"
+                                    }
+                                ]
+                                }
+                            ]
+                            }
+                        }
+                        }
+                    }
+                    }
+                ]
+                
+            }
+    if intentName == "cc.palabras.sueltas.gano-next":
+        parameters = result.get("parameters")
+        tiposdeproducto = parameters.get("tiposdeproducto")
+
+        if tiposdeproducto == "Cuenta.Ganadora":
+            speech = ""
+            return {
+                "speech": "",
+                "messages": [
+                    {
+                    "type": 0,
+                    "platform": "facebook",
+                    "speech": "Tal vez te referiste a lo siguiente: 🤔"
+                    },
+                    {
+                    "type": 4,
+                    "platform": "facebook",
+                    "payload": {
+                        "facebook": {
+                        "attachment": {
+                            "type": "template",
+                            "payload": {
+                            "template_type": "generic",
+                            "elements": [
+                                {
+                                "title": "Ganancia de intereses",
+                                "subtitle": "¿Cada cuánto tiempo gano intereses?",
+                                "buttons": [
+                                    {
+                                    "type": "postback",
+                                    "title": "Ver respuesta",
+                                    "payload": "cg_from_lista_sucesiva_info_intereses"
+                                    }
+                                ]
+                                }
+                            ]
+                            }
+                        }
+                        }
+                    }
+                    }
+                ]
+                
+            }
+        else:
+            speech = "Sí, siempre."
+            return {
+                "speech": speech,
+                "messages": [
+                    {
+                    "type": 0,
+                    "platform": "facebook",
+                    "speech": "Los sorteos o ese tipo de promociones solo corresponden a la cuenta ganadora :/"
+                    }
+                ]
+                
+            }
+    
+    if intentName == "cc.palabras.sueltas.web-next":
+        parameters = result.get("parameters")
+        tiposdeproducto = parameters.get("tiposdeproducto")
+
+        if tiposdeproducto == "Cuenta.Sueldo":
+            speech = ""
+            return {
+                "speech": "",
+                "messages": [
+                    {
+                    "type": 0,
+                    "platform": "facebook",
+                    "speech": "Tal vez te referiste a lo siguiente: 🤔"
+                    },
+                    {
+                    "type": 4,
+                    "platform": "facebook",
+                    "payload": {
+                        "facebook": {
+                        "attachment": {
+                            "type": "template",
+                            "payload": {
+                            "template_type": "generic",
+                            "elements": [
+                                {
+                                "title": "Operaciones en la web",
+                                "subtitle": "Si abrí mi Cuenta por la web, ¿Cómo puedo realizar operaciones en ella?",
+                                "buttons": [
+                                    {
+                                    "type": "postback",
+                                    "title": "Ver respuesta",
+                                    "payload": "cs_from_lista_sucesiva_info_guia"
+                                    }
+                                ]
+                                }
+                            ]
+                            }
+                        }
+                        }
+                    }
+                    }
+                ]
+                
+            }
+        else:
+            speech = "Sí, siempre."
+            return {
+                "speech": speech,
+                "messages": [
+                    {
+                    "type": 0,
+                    "platform": "facebook",
+                    "speech": "Tal vez te referiste a lo siguiente: 🤔"
+                    },
+                    {
+                    "type": 4,
+                    "platform": "facebook",
+                    "payload": {
+                        "facebook": {
+                        "attachment": {
+                            "type": "template",
+                            "payload": {
+                            "template_type": "generic",
+                            "elements": [
+                                {
+                                "title": "Operaciones en la web",
+                                "subtitle": "Si abrí mi Cuenta por la web, ¿Cómo puedo realizar operaciones en ella?",
+                                "buttons": [
+                                    {
+                                    "type": "postback",
+                                    "title": "Ver respuesta",
+                                    "payload": "cg_from_lista_sucesiva_info_guia"
+                                    }
+                                ]
+                                }
+                            ]
+                            }
+                        }
+                        }
+                    }
+                    }
+                ]
+                
+            }
 
 
 
