@@ -160,13 +160,13 @@ def makeResponse(req):
         tiposdeproducto = parameters.get("tiposdeproducto")
 
         if tiposdeproducto == "Cuenta.Sueldo":
-            speech = "No, sin embargo se pueden emitirse si así lo solicitas."
+            speech = "No se reciben estados de cuenta mensuales, sin embargo se pueden emitirse si así lo solicitas."
             return {
                 "speech": speech,
                 "displayText": speech
             }
         else:
-            speech = "No, sin embargo se pueden emitirse si así lo solicitas."
+            speech = "No se reciben estados de cuenta mensuales, sin embargo se pueden emitirse si así lo solicitas."
             return {
                 "speech": speech,
                 "displayText": speech,
