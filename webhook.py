@@ -112,13 +112,13 @@ def makeResponse(req):
         tiposdeproducto = parameters.get("tiposdeproducto")
 
         if tiposdeproducto == "Cuenta.Sueldo":
-            speech = "Sí, puedes utilizarla en la amplia red de establecimientos afiliados a Visa"
+            speech = "Tu tarjeta de débito puedes utilizarla en la amplia red de establecimientos afiliados a Visa"
             return {
                 "speech": speech,
                 "displayText": speech
             }
         else:
-            speech = "Sí, puedes utilizarla en la amplia red de establecimientos afiliados a Visa."
+            speech = "Tu tarjeta de débito puedes utilizarla en la amplia red de establecimientos afiliados a Visa."
             return {
                 "speech": speech,
                 "displayText": speech,
