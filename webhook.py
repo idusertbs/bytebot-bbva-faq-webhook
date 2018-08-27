@@ -452,7 +452,7 @@ def makeResponse(req):
                             ]
             }
 
-    if intentName == "c.palabras.sueltas.bimoneda-next":
+    if intentName == "c.palabras.sueltas.bimoneda-next" or intentName == "c.palabras.sueltas.context.bimoneda":
         parameters = result.get("parameters")
         tiposdeproducto = parameters.get("tiposdeproducto")
 
