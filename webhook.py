@@ -1563,7 +1563,8 @@ def makeResponse(req):
 
     if intentName == "c.palabras.sueltas.context.bimoneda":
         contexts = result.get("contexts")
-        tiposdeproducto = contexts[0].get("tiposdeproducto")
+        parameters = contexts[0].get("parameters")
+        tiposdeproducto = parameters.get("tiposdeproducto") 
 
         if tiposdeproducto == "Cuenta.Sueldo":
             speech = ""
