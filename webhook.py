@@ -349,6 +349,7 @@ def makeResponse(req):
                                             {
                                             "title": "Operaciones Libres en Cajeros Automáticos",
                                             "subtitle": "¿Cuántas operaciones libres tengo en Cajeros Automáticos del BBVA Continental?",                                            
+                                            "image_url": "https://raw.githubusercontent.com/idusertbs/bytebot-bbva-faq-webhook/Developer/assets/pics/IMG_0032-1.jpg",
                                             "buttons": [
                                                 {
                                                 "title": "Ver Respuesta",
@@ -411,6 +412,7 @@ def makeResponse(req):
                                             {
                                             "title": "Operaciones Libres en Cajeros Automáticos",
                                             "subtitle": "¿Cuántas operaciones libres tengo en Cajeros Automáticos del BBVA Continental?",                                            
+                                            "image_url": "https://raw.githubusercontent.com/idusertbs/bytebot-bbva-faq-webhook/Developer/assets/pics/IMG_0032-1.jpg",
                                             "buttons": [
                                                 {
                                                 "title": "Ver Respuesta",
