@@ -118,7 +118,7 @@ def makeResponse(req):
                 "displayText": speech
             }
         else:
-            speech = "Tu tarjeta de débito puedes utilizarla en la amplia red de establecimientos afiliados a Visa."
+            speech = "Tu tarjeta de débito puedes utilizarla en la amplia red de establecimientos afiliados a Visa"
             return {
                 "speech": speech,
                 "displayText": speech,
@@ -321,7 +321,7 @@ def makeResponse(req):
     
     #-----------------------------------------
 
-    if intentName == "c.palabras.sueltas.operaciones-next" or intentName == "c.palabras.sueltas.context.bimoneda":
+    if intentName == "c.palabras.sueltas.operaciones-next" or intentName == "c.palabras.sueltas.context.operaciones":
         parameters = result.get("parameters")
         tiposdeproducto = parameters.get("tiposdeproducto")
 
@@ -538,7 +538,7 @@ def makeResponse(req):
             }
     
 
-    if intentName == "c.palabras.sueltas.mantenimiento-next" or intentName == "c.palabras.sueltas.context.bimoneda":
+    if intentName == "c.palabras.sueltas.mantenimiento-next" or intentName == "c.palabras.sueltas.context.mantenimiento":
         parameters = result.get("parameters")
         tiposdeproducto = parameters.get("tiposdeproducto")
 
@@ -623,7 +623,7 @@ def makeResponse(req):
                 
             }
     
-    if intentName == "c.palabras.sueltas.fondo-next" or intentName == "c.palabras.sueltas.context.bimoneda":
+    if intentName == "c.palabras.sueltas.fondo-next" or intentName == "c.palabras.sueltas.context.fondo":
         parameters = result.get("parameters")
         tiposdeproducto = parameters.get("tiposdeproducto")
 
@@ -730,7 +730,7 @@ def makeResponse(req):
                             ]
             }
     
-    if intentName == "c.palabras.sueltas.tarjeta-next" or intentName == "c.palabras.sueltas.context.bimoneda":
+    if intentName == "c.palabras.sueltas.tarjeta-next" or intentName == "c.palabras.sueltas.context.tarjeta":
         parameters = result.get("parameters")
         tiposdeproducto = parameters.get("tiposdeproducto")
 
@@ -837,7 +837,7 @@ def makeResponse(req):
                             ]
             }
     
-    if intentName == "c.palabras.sueltas.abrir-next" or intentName == "c.palabras.sueltas.context.bimoneda":
+    if intentName == "c.palabras.sueltas.abrir-next" or intentName == "c.palabras.sueltas.context.abrir":
         parameters = result.get("parameters")
         tiposdeproducto = parameters.get("tiposdeproducto")
 
@@ -922,7 +922,7 @@ def makeResponse(req):
                 
             }
 
-    if intentName == "c.palabras.sueltas.franquicia-next" or intentName == "c.palabras.sueltas.context.bimoneda":
+    if intentName == "c.palabras.sueltas.franquicia-next" or intentName == "c.palabras.sueltas.context.franquicia":
         parameters = result.get("parameters")
         tiposdeproducto = parameters.get("tiposdeproducto")
 
@@ -980,7 +980,7 @@ def makeResponse(req):
                 
             }
 
-    if intentName == "c.palabras.sueltas.estados-next" or intentName == "c.palabras.sueltas.context.bimoneda":
+    if intentName == "c.palabras.sueltas.estados-next" or intentName == "c.palabras.sueltas.context.estados":
         parameters = result.get("parameters")
         tiposdeproducto = parameters.get("tiposdeproducto")
 
@@ -1062,7 +1062,7 @@ def makeResponse(req):
                 ]
                 
             }
-    if intentName == "c.palabras.sueltas.promociones-next" or intentName == "c.palabras.sueltas.context.bimoneda":
+    if intentName == "c.palabras.sueltas.promociones-next" or intentName == "c.palabras.sueltas.context.promociones":
         parameters = result.get("parameters")
         tiposdeproducto = parameters.get("tiposdeproducto")
 
@@ -1119,7 +1119,7 @@ def makeResponse(req):
                 
             }
     
-    if intentName == "c.palabras.sueltas.depositos-next" or intentName == "c.palabras.sueltas.context.bimoneda":
+    if intentName == "c.palabras.sueltas.depositos-next" or intentName == "c.palabras.sueltas.context.depositos":
         parameters = result.get("parameters")
         tiposdeproducto = parameters.get("tiposdeproducto")
 
@@ -1203,7 +1203,7 @@ def makeResponse(req):
                 ]
                 
             }
-    if intentName == "c.palabras.sueltas.seguro-next" or intentName == "c.palabras.sueltas.context.bimoneda":
+    if intentName == "c.palabras.sueltas.seguro-next" or intentName == "c.palabras.sueltas.context.seguro":
         parameters = result.get("parameters")
         tiposdeproducto = parameters.get("tiposdeproducto")
 
@@ -1287,7 +1287,7 @@ def makeResponse(req):
                 ]
                 
             }
-    if intentName == "c.palabras.sueltas.gano-next" or intentName == "c.palabras.sueltas.context.bimoneda":
+    if intentName == "c.palabras.sueltas.gano-next" or intentName == "c.palabras.sueltas.context.gano":
         parameters = result.get("parameters")
         tiposdeproducto = parameters.get("tiposdeproducto")
 
@@ -1345,7 +1345,7 @@ def makeResponse(req):
                 
             }
     
-    if intentName == "c.palabras.sueltas.web-next" or intentName == "c.palabras.sueltas.context.bimoneda":
+    if intentName == "c.palabras.sueltas.web-next" or intentName == "c.palabras.sueltas.context.web":
         parameters = result.get("parameters")
         tiposdeproducto = parameters.get("tiposdeproducto")
 
