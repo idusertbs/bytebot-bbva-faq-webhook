@@ -321,7 +321,7 @@ def makeResponse(req):
     
     #-----------------------------------------
 
-    if intentName == "c.palabras.sueltas.operaciones-next" or intentName == "c.palabras.sueltas.context.operaciones":
+    if intentName == "c.palabras.sueltas.operaciones-next" or intentName == "c.palabras.sueltas.context.operaciones" or intentName == "c.palabras.sueltas.tipo.producto.operaciones":
         parameters = result.get("parameters")
         tiposdeproducto = parameters.get("tiposdeproducto")
 
@@ -452,7 +452,7 @@ def makeResponse(req):
                             ]
             }
 
-    if intentName == "c.palabras.sueltas.bimoneda-next" or intentName == "c.palabras.sueltas.context.bimoneda":
+    if intentName == "c.palabras.sueltas.bimoneda-next" or intentName == "c.palabras.sueltas.context.bimoneda" or intentName == "c.palabras.sueltas.tipo.producto.bimoneda":
         parameters = result.get("parameters")
         tiposdeproducto = parameters.get("tiposdeproducto")
 
@@ -538,7 +538,7 @@ def makeResponse(req):
             }
     
 
-    if intentName == "c.palabras.sueltas.mantenimiento-next" or intentName == "c.palabras.sueltas.context.mantenimiento":
+    if intentName == "c.palabras.sueltas.mantenimiento-next" or intentName == "c.palabras.sueltas.context.mantenimiento" or intentName == "c.palabras.sueltas.tipo.producto.mantenimiento":
         parameters = result.get("parameters")
         tiposdeproducto = parameters.get("tiposdeproducto")
 
@@ -623,7 +623,7 @@ def makeResponse(req):
                 
             }
     
-    if intentName == "c.palabras.sueltas.fondo-next" or intentName == "c.palabras.sueltas.context.fondo":
+    if intentName == "c.palabras.sueltas.fondo-next" or intentName == "c.palabras.sueltas.context.fondo"  or intentName == "c.palabras.sueltas.tipo.producto.fondo":
         parameters = result.get("parameters")
         tiposdeproducto = parameters.get("tiposdeproducto")
 
@@ -730,7 +730,7 @@ def makeResponse(req):
                             ]
             }
     
-    if intentName == "c.palabras.sueltas.tarjeta-next" or intentName == "c.palabras.sueltas.context.tarjeta":
+    if intentName == "c.palabras.sueltas.tarjeta-next" or intentName == "c.palabras.sueltas.context.tarjeta" or intentName == "c.palabras.sueltas.tipo.producto.tarjeta":
         parameters = result.get("parameters")
         tiposdeproducto = parameters.get("tiposdeproducto")
 
@@ -837,7 +837,7 @@ def makeResponse(req):
                             ]
             }
     
-    if intentName == "c.palabras.sueltas.abrir-next" or intentName == "c.palabras.sueltas.context.abrir":
+    if intentName == "c.palabras.sueltas.abrir-next" or intentName == "c.palabras.sueltas.context.abrir" or intentName == "c.palabras.sueltas.tipo.producto.abrir":
         parameters = result.get("parameters")
         tiposdeproducto = parameters.get("tiposdeproducto")
 
@@ -922,7 +922,7 @@ def makeResponse(req):
                 
             }
 
-    if intentName == "c.palabras.sueltas.franquicia-next" or intentName == "c.palabras.sueltas.context.franquicia":
+    if intentName == "c.palabras.sueltas.franquicia-next" or intentName == "c.palabras.sueltas.context.franquicia" or intentName == "c.palabras.sueltas.tipo.producto.franquicia":
         parameters = result.get("parameters")
         tiposdeproducto = parameters.get("tiposdeproducto")
 
@@ -980,7 +980,7 @@ def makeResponse(req):
                 
             }
 
-    if intentName == "c.palabras.sueltas.estados-next" or intentName == "c.palabras.sueltas.context.estados":
+    if intentName == "c.palabras.sueltas.estados-next" or intentName == "c.palabras.sueltas.context.estados" or intentName == "c.palabras.sueltas.tipo.producto.estados":
         parameters = result.get("parameters")
         tiposdeproducto = parameters.get("tiposdeproducto")
 
@@ -1062,7 +1062,7 @@ def makeResponse(req):
                 ]
                 
             }
-    if intentName == "c.palabras.sueltas.promociones-next" or intentName == "c.palabras.sueltas.context.promociones":
+    if intentName == "c.palabras.sueltas.promociones-next" or intentName == "c.palabras.sueltas.context.promociones" or intentName == "c.palabras.sueltas.tipo.producto.promociones":
         parameters = result.get("parameters")
         tiposdeproducto = parameters.get("tiposdeproducto")
 
@@ -1119,7 +1119,7 @@ def makeResponse(req):
                 
             }
     
-    if intentName == "c.palabras.sueltas.depositos-next" or intentName == "c.palabras.sueltas.context.depositos":
+    if intentName == "c.palabras.sueltas.depositos-next" or intentName == "c.palabras.sueltas.context.depositos" or intentName == "c.palabras.sueltas.tipo.producto.depositos":
         parameters = result.get("parameters")
         tiposdeproducto = parameters.get("tiposdeproducto")
 
@@ -1203,7 +1203,7 @@ def makeResponse(req):
                 ]
                 
             }
-    if intentName == "c.palabras.sueltas.seguro-next" or intentName == "c.palabras.sueltas.context.seguro":
+    if intentName == "c.palabras.sueltas.seguro-next" or intentName == "c.palabras.sueltas.context.seguro" or intentName == "c.palabras.sueltas.tipo.producto.seguro":
         parameters = result.get("parameters")
         tiposdeproducto = parameters.get("tiposdeproducto")
 
@@ -1287,7 +1287,7 @@ def makeResponse(req):
                 ]
                 
             }
-    if intentName == "c.palabras.sueltas.gano-next" or intentName == "c.palabras.sueltas.context.gano":
+    if intentName == "c.palabras.sueltas.gano-next" or intentName == "c.palabras.sueltas.context.gano" or intentName == "c.palabras.sueltas.tipo.producto.gano":
         parameters = result.get("parameters")
         tiposdeproducto = parameters.get("tiposdeproducto")
 
@@ -1345,7 +1345,7 @@ def makeResponse(req):
                 
             }
     
-    if intentName == "c.palabras.sueltas.web-next" or intentName == "c.palabras.sueltas.context.web":
+    if intentName == "c.palabras.sueltas.web-next" or intentName == "c.palabras.sueltas.context.web" or intentName == "c.palabras.sueltas.tipo.producto.web":
         parameters = result.get("parameters")
         tiposdeproducto = parameters.get("tiposdeproducto")
 
