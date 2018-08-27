@@ -207,7 +207,7 @@ def makeResponse(req):
         tiposdeproducto = parameters.get("tiposdeproducto")
 
         if tiposdeproducto == "Cuenta.Sueldo":
-            speech = "Nada, siempre y cuando tu Cuenta Sueldo reciba abonos de Pago de Haberes de manera consecutiva."
+            speech = "El mantenimiento de la cuenta sueldo no cuesta nada, siempre y cuando tu Cuenta Sueldo reciba abonos de Pago de Haberes de manera consecutiva."
             return {
                 "speech": speech,
                 "displayText": speech
