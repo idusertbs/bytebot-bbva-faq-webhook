@@ -1047,7 +1047,34 @@ def makeResponse(req):
                     {
                     "type": 0,
                     "platform": "facebook",
-                    "speech": "La franquicia solo corresponde a la cuenta sueldo :/"
+                    "speech": "La franquicia solo corresponde a la cuenta sueldo :/ , puedes encontrarlo aquí abajo :)"
+                    },
+                    {
+                    "type": 4,
+                    "platform": "facebook",
+                    "payload": {
+                        "facebook": {
+                        "attachment": {
+                            "type": "template",
+                            "payload": {
+                            "template_type": "generic",
+                            "elements": [
+                                {
+                                "title": "Franquicia en mi Cuenta Sueldo",
+                                "subtitle": "¿Qué es una franquicia en mi cuenta Sueldo?",
+                                "buttons": [
+                                    {
+                                    "type": "postback",
+                                    "title": "Ver respuesta",
+                                    "payload": "cs_from_lista_sucesiva_info_franquicias"
+                                    }
+                                ]
+                                }
+                            ]
+                            }
+                        }
+                        }
+                    }
                     }
                 ]
                 
