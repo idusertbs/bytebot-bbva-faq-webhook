@@ -58,6 +58,30 @@ def makeResponse(req):
 				}
 			]
             }
+    
+    if intentName == "cs.no.secuencial.unico.pg1":
+        parameters = result.get("parameters")
+        tiposdeproducto = parameters.get("tiposdeproducto")
+
+        if tiposdeproducto == "Cuenta.Ganadora":
+            speech = "El interés se gana diario y los abonamos en tu cuenta cada fin de mes. 😀" 
+            return {
+                "speech": speech,
+                "displayText": speech
+            }
+        else:
+            speech = "La ganancia de intereses solo corresponden a la cuenta ganadora 😐. En la cuenta ganadora el interés se gana diario y lo abonamos en tu cuenta cada fin de mes 😀 "
+            return {
+                "speech": speech,
+                "displayText": speech,
+                "messages": [
+				{
+					"type": 0,
+					"speech": speech,
+                    "platform": "facebook"
+				}
+			]
+            }
 
 
 
