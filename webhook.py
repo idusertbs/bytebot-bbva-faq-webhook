@@ -35,6 +35,79 @@ def makeResponse(req):
     metadata = result.get("metadata")
     intentName = metadata.get("intentName")
     
+    if intentName == "cs.no.secuencial.unico.pg3":
+        parameters = result.get("parameters")
+        tiposdeproducto = parameters.get("tiposdeproducto")
+
+        if tiposdeproducto == "Cuenta.Sueldo":
+            speech = "Una franquicia, es el monto a partir del cual el Banco paga intereses: \n✔️Soles: S/500.00 \n✔️Dólares: US$220.00" 
+            return {
+                "speech": speech,
+                "displayText": speech
+            }
+        else:
+            speech = "La franquicia solo corresponde a la cuenta sueldo 😐. En la cuenta SUELDO una franquicia es el monto a partir del cual el Banco paga intereses: \n✔️Soles: S/500.00 \n✔️Dólares: US$220.00"
+            return {
+                "speech": speech,
+                "displayText": speech,
+                "messages": [
+				{
+					"type": 0,
+					"speech": speech,
+                    "platform": "facebook"
+				}
+			]
+            }
+    
+    if intentName == "cg.no.secuencial.unico.pg1":
+        parameters = result.get("parameters")
+        tiposdeproducto = parameters.get("tiposdeproducto")
+
+        if tiposdeproducto == "Cuenta.Ganadora":
+            speech = "El interés se gana diario y los abonamos en tu cuenta cada fin de mes. 😀" 
+            return {
+                "speech": speech,
+                "displayText": speech
+            }
+        else:
+            speech = "La ganancia de intereses solo corresponden a la cuenta ganadora 😐. En la cuenta ganadora el interés se gana diario y lo abonamos en tu cuenta cada fin de mes 😀 "
+            return {
+                "speech": speech,
+                "displayText": speech,
+                "messages": [
+				{
+					"type": 0,
+					"speech": speech,
+                    "platform": "facebook"
+				}
+			]
+            }
+    if intentName == "cg.no.secuencial.unico.pg2":
+        parameters = result.get("parameters")
+        tiposdeproducto = parameters.get("tiposdeproducto")
+
+        if tiposdeproducto == "Cuenta.Ganadora":
+            speech = "Para participar de los sorteos, debes mantener al menos una Cuenta Ganadora con saldo medio igual o mayor a S/ 1,000 o US$ 1,000, para poder ganar una opción para el sorteo. Además, por cada S/ 1,000 o US$ 1,000 adicionales depositados en la cuenta, tienes una opción extra. Si eres cliente Mundo Sueldo o VIP tienes doble opción. Las cuentas ganadoras en soles duplican tus opciones." 
+            return {
+                "speech": speech,
+                "displayText": speech
+            }
+        else:
+            speech = "Los sorteos y promociones solo pertenecen a la cuenta GANADORA 😐. Si quieres participar de los sorteos con tu cuenta GANADORA, debes mantener al menos una Cuenta Ganadora con saldo medio igual o mayor a S/ 1,000 o US$ 1,000, para poder ganar una opción para el sorteo. Además, por cada S/ 1,000 o US$ 1,000 adicionales depositados en la cuenta, tienes una opción extra. Si eres cliente Mundo Sueldo o VIP tienes doble opción. Las cuentas ganadoras en soles duplican tus opciones."
+            return {
+                "speech": speech,
+                "displayText": speech,
+                "messages": [
+				{
+					"type": 0,
+					"speech": speech,
+                    "platform": "facebook"
+				}
+			]
+            }
+
+
+
     if intentName == "no.secuencial.no.parametrica.pg1-options":
         parameters = result.get("parameters")
         tiposdeproducto = parameters.get("tiposdeproducto")
@@ -974,7 +1047,34 @@ def makeResponse(req):
                     {
                     "type": 0,
                     "platform": "facebook",
-                    "speech": "La franquicia solo corresponde a la cuenta sueldo :/"
+                    "speech": "La franquicia solo corresponde a la cuenta sueldo :/ , puedes encontrarlo aquí abajo :)"
+                    },
+                    {
+                    "type": 4,
+                    "platform": "facebook",
+                    "payload": {
+                        "facebook": {
+                        "attachment": {
+                            "type": "template",
+                            "payload": {
+                            "template_type": "generic",
+                            "elements": [
+                                {
+                                "title": "Franquicia en mi Cuenta Sueldo",
+                                "subtitle": "¿Qué es una franquicia en mi cuenta Sueldo?",
+                                "buttons": [
+                                    {
+                                    "type": "postback",
+                                    "title": "Ver respuesta",
+                                    "payload": "cs_from_lista_sucesiva_info_franquicias"
+                                    }
+                                ]
+                                }
+                            ]
+                            }
+                        }
+                        }
+                    }
                     }
                 ]
                 
