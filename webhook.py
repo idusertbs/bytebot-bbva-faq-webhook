@@ -286,7 +286,7 @@ def makeResponse(req):
                 "displayText": speech
             }
         else:
-            speech = "El mantenimiento de cuenta mensual es variable, de acuerdo al saldo medio de tu cuenta:\n\n✔️  ✔️ Hasta S/ 900 o $ 300: S/ 8.00 o $ 3.00, respectivamente.\n✔️  ✔️ Mayor a S/ 900 o $ 300: SIN COSTO."
+            speech = "El mantenimiento de cuenta mensual es variable, de acuerdo al saldo medio de tu cuenta:\n\n  ✔️ Hasta S/ 900 o $ 300: S/ 8.00 o $ 3.00, respectivamente.\n  ✔️ Mayor a S/ 900 o $ 300: SIN COSTO."
             return {
                 "speech": speech,
                 "displayText": speech,
