@@ -396,7 +396,7 @@ def makeResponse(req):
                                             ]
                                             },
                                             {
-                                            "title": "Cantidad de Operaciones Libres",
+                                            "title": "Operaciones libres en Ventanilla",
                                             "subtitle": "¿Cuántas operaciones libres tengo por ventanilla?",                                            
                                             "buttons": [
                                                 {
