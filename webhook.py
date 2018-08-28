@@ -82,6 +82,29 @@ def makeResponse(req):
 				}
 			]
             }
+    if intentName == "cg.no.secuencial.unico.pg2":
+        parameters = result.get("parameters")
+        tiposdeproducto = parameters.get("tiposdeproducto")
+
+        if tiposdeproducto == "Cuenta.Ganadora":
+            speech = "Para participar de los sorteos, debes mantener al menos una Cuenta Ganadora con saldo medio igual o mayor a S/ 1,000 o US$ 1,000, para poder ganar una opción para el sorteo. Además, por cada S/ 1,000 o US$ 1,000 adicionales depositados en la cuenta, tienes una opción extra. Si eres cliente Mundo Sueldo o VIP tienes doble opción. Las cuentas ganadoras en soles duplican tus opciones." 
+            return {
+                "speech": speech,
+                "displayText": speech
+            }
+        else:
+            speech = "Los sorteos y promociones solo pertenecen a la cuenta GANADORA 😐."
+            return {
+                "speech": speech,
+                "displayText": speech,
+                "messages": [
+				{
+					"type": 0,
+					"speech": speech,
+                    "platform": "facebook"
+				}
+			]
+            }
 
 
 
