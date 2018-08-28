@@ -35,6 +35,32 @@ def makeResponse(req):
     metadata = result.get("metadata")
     intentName = metadata.get("intentName")
     
+    if intentName == "cs.no.secuencial.unico.pg3":
+        parameters = result.get("parameters")
+        tiposdeproducto = parameters.get("tiposdeproducto")
+
+        if tiposdeproducto == "Cuenta.Sueldo":
+            speech = "Una franquicia, es el monto a partir del cual el Banco paga intereses: \n✔️Soles: S/500.00 \n✔️Dólares: US$220.00" 
+            return {
+                "speech": speech,
+                "displayText": speech
+            }
+        else:
+            speech = "La franquicia solo corresponde a la cuenta sueldo 😐"
+            return {
+                "speech": speech,
+                "displayText": speech,
+                "messages": [
+				{
+					"type": 0,
+					"speech": speech,
+                    "platform": "facebook"
+				}
+			]
+            }
+
+
+
     if intentName == "no.secuencial.no.parametrica.pg1-options":
         parameters = result.get("parameters")
         tiposdeproducto = parameters.get("tiposdeproducto")
