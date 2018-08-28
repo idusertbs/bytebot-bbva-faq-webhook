@@ -46,7 +46,7 @@ def makeResponse(req):
                 "displayText": speech
             }
         else:
-            speech = "La franquicia solo corresponde a la cuenta sueldo 😐"
+            speech = "La franquicia solo corresponde a la cuenta sueldo 😐. En la cuenta SUELDO una franquicia es el monto a partir del cual el Banco paga intereses: \n✔️Soles: S/500.00 \n✔️Dólares: US$220.00"
             return {
                 "speech": speech,
                 "displayText": speech,
@@ -93,7 +93,7 @@ def makeResponse(req):
                 "displayText": speech
             }
         else:
-            speech = "Los sorteos y promociones solo pertenecen a la cuenta GANADORA 😐."
+            speech = "Los sorteos y promociones solo pertenecen a la cuenta GANADORA 😐. Si quieres participar de los sorteos con tu cuenta GANADORA, debes mantener al menos una Cuenta Ganadora con saldo medio igual o mayor a S/ 1,000 o US$ 1,000, para poder ganar una opción para el sorteo. Además, por cada S/ 1,000 o US$ 1,000 adicionales depositados en la cuenta, tienes una opción extra. Si eres cliente Mundo Sueldo o VIP tienes doble opción. Las cuentas ganadoras en soles duplican tus opciones."
             return {
                 "speech": speech,
                 "displayText": speech,
