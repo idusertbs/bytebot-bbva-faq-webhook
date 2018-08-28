@@ -59,7 +59,7 @@ def makeResponse(req):
 			]
             }
     
-    if intentName == "cs.no.secuencial.unico.pg1":
+    if intentName == "cg.no.secuencial.unico.pg1":
         parameters = result.get("parameters")
         tiposdeproducto = parameters.get("tiposdeproducto")
 
